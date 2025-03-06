@@ -1,6 +1,7 @@
 using bookDemo.Models;
 namespace bookDemo
 {
+    //local data on ApplicationContext
     public static class ApplicationContext
     {
         public static List<Book> Books {get; set;}

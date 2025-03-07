@@ -4,9 +4,9 @@ using WebApi.Repostories.Config;
 
 namespace WebApi.Repostories
 {
-    public class RepostoryContext : DbContext
+    public class RepositoryContext : DbContext
     {
-        public RepostoryContext(DbContextOptions options) :
+        public RepositoryContext(DbContextOptions options) :
             base(options)
         {
             

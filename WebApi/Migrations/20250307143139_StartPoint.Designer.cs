@@ -10,7 +10,7 @@ using WebApi.Repostories;
 
 namespace WebApi.Migrations
 {
-    [DbContext(typeof(RepostoryContext))]
+    [DbContext(typeof(RepositoryContext))]
     [Migration("20250307143139_StartPoint")]
     partial class StartPoint
     {

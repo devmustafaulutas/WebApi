@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApi.Repostories;
 
@@ -10,11 +9,10 @@ using WebApi.Repostories;
 
 namespace WebApi.Migrations
 {
-    [DbContext(typeof(RepostoryContext))]
-    [Migration("20250307152012_seedData")]
-    partial class seedData
+    [DbContext(typeof(RepositoryContext))]
+    partial class repositoryContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

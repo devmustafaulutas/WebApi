@@ -5,6 +5,11 @@ namespace WebApi.Repostories
 {
     public class RepostoryContext : DbContext
     {
+        public RepostoryContext(DbContextOptions options) :
+            base(options)
+        {
+            
+        }
         public DbSet<Book> Books { get; set; } = null!;
     }
 }

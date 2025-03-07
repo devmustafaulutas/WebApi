@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

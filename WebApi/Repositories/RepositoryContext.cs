@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApi.Models;
+using WebApi.Repostories.Config;
 
 namespace WebApi.Repostories
 {
@@ -11,5 +12,10 @@ namespace WebApi.Repostories
             
         }
         public DbSet<Book> Books { get; set; } = null!;
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new BookConfig());
+        }
     }
 }

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Repositories.Efcore;
+using WebApi.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +11,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-//ef Core IOS dbContext tanımını yapmış oluyoruz
-builder.Services.AddDbContext<RepositoryContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("sqlConnection")));
+// Veritabanı
+builder.Services.ConfigureSqlContext(builder.Configuration);
 
 var app = builder.Build();
 

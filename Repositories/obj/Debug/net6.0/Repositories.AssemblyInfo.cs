@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("bookDemo")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c95a41137d92814c1b7e2100e096677d754a90aa")]
-[assembly: System.Reflection.AssemblyProductAttribute("bookDemo")]
-[assembly: System.Reflection.AssemblyTitleAttribute("bookDemo")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+263c799e95d80267fa33de16391f31d5bfd22e57")]
+[assembly: System.Reflection.AssemblyProductAttribute("Repositories")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.

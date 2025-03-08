@@ -936,6 +936,30 @@
             "rid": "win"
           }
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositories.dll": {}
+        }
       }
     }
   },
@@ -2581,16 +2605,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Repositories/1.0.0": {
+      "type": "project",
+      "path": "../Repositories/Repositories.csproj",
+      "msbuildProject": "../Repositories/Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.AspNetCore.JsonPatch >= 9.0.2",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.10",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
+      "Repositories >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2601,11 +2637,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2626,7 +2662,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\webapi\\Repositories\\Repositories.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

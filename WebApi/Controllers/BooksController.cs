@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Models;
-using WebApi.Repostories;
+using Repositories.Efcore;
 using Microsoft.AspNetCore.JsonPatch;
+using Entities.Models;
 
 namespace WebApi.Controlers
 {

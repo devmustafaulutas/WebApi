@@ -1,4 +1,5 @@
 using Entities.Models;
+using Repositories;
 namespace Services.Contracts
 {
     public interface IBookService

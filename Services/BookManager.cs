@@ -23,6 +23,7 @@ namespace Services
         {
             if(book is null)
                 throw new ArgumentNullException(nameof(book));
+
             _manager.Book.CreateOneBook(book);
             _manager.Save();
             return book;
@@ -30,7 +31,9 @@ namespace Services
 
         public void DeleteOneBook(int id, bool trackChanges)
         {
+            //check entity
             var entitiy = _manager.Book.GetOneBookById(id , trackChanges);
+
             if(entitiy is null)
                 throw new Exception($"Book with id:{id} could not found");
             _manager.Book.DeleteOneBook(entitiy);
@@ -56,7 +59,7 @@ namespace Services
             //check params
             if(book is null)
                 throw new ArgumentNullException(nameof(book));
-                
+
             entitiy.Title = book.Title;
             entitiy.Price = book.Price;
 

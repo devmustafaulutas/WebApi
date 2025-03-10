@@ -960,6 +960,16 @@
         "runtime": {
           "bin/placeholder/Repositories.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -2615,6 +2625,11 @@
       "type": "project",
       "path": "../Repositories/Repositories.csproj",
       "msbuildProject": "../Repositories/Repositories.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2627,6 +2642,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
       "Repositories >= 1.0.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2668,6 +2684,9 @@
             },
             "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj": {
               "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj"
+            },
+            "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj"
             }
           }
         }

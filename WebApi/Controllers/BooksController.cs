@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Repositories.Efcore;
 using Microsoft.AspNetCore.JsonPatch;
 using Entities.Models;
+using Repositories.Contracts;
 
 namespace WebApi.Controlers
 {
@@ -11,18 +12,19 @@ namespace WebApi.Controlers
     public class BooksController : ControllerBase
     {
         // Önemli bu pattern öğrenilecek
-        private readonly RepositoryContext _context;
+        private readonly IRepositoryManager _manager;
 
-        public BooksController(RepositoryContext context)
+        public BooksController(IRepositoryManager manager)
         {
-            _context = context;
+            _manager = manager;
         }
+
         [HttpGet]
         public IActionResult GetAllBooks()
         {
             try
             {
-                var books = _context.Books.ToList();
+                var books = _manager.Book.GetAllBooks(false);
                 return Ok(books);
             }
             catch (Exception ex)
@@ -38,16 +40,15 @@ namespace WebApi.Controlers
         {
             try
             {
-                var book = _context
-                .Books
-                .Where(b => b.Id.Equals(id))
-                .SingleOrDefault();
+                var book = _manager
+                .Book.GetOneBookById(id , false);
 
                 if(book is null)
                 {
                     return NotFound(); //404
                 }
                 return Ok(book);
+
             }
             catch (Exception ex)
             {
@@ -64,8 +65,9 @@ namespace WebApi.Controlers
                 if (book is null)
                     return BadRequest(); //400
                 
-                _context.Books.Add(book);
-                _context.SaveChanges();
+                _manager.Book.CreateOneBook(book);
+                _manager.Save();
+
                 return StatusCode(201, book);
             }
             catch(Exception ex)
@@ -81,10 +83,9 @@ namespace WebApi.Controlers
             // check
 
             // 1. Adım kitap verisini çekiyoruz
-            var entity = _context
-                .Books
-                .Where(b => b.Id.Equals(id))
-                .SingleOrDefault();
+            var entity = _manager
+                .Book
+                .GetOneBookById(id,true);
 
             //Varlığını kontrol ediyoruz
             if(entity is null)
@@ -99,7 +100,7 @@ namespace WebApi.Controlers
             entity.Price = book.Price;
             
             //Kalıcı güncelleme için save alıyoruz
-            _context.SaveChanges();
+            _manager.Save();
 
             return Ok(book);
             }
@@ -115,10 +116,9 @@ namespace WebApi.Controlers
         {
             try
             {
-                var entity = _context
-                    .Books
-                    .Where(b => b.Id.Equals(id))
-                    .SingleOrDefault();
+                var entity = _manager
+                    .Book
+                    .GetOneBookById(id,false);
 
                 if(entity is null)
                     return NotFound(new
@@ -126,8 +126,8 @@ namespace WebApi.Controlers
                         StatusCode = 404,
                         message = $"Book with id:{id} could not found !"
                     });
-                _context.Books.Remove(entity);
-                _context.SaveChanges();
+                _manager.Book.DeleteOneBook(entity);
+                _manager.Save();
 
                 return NoContent();                
             }
@@ -142,15 +142,14 @@ namespace WebApi.Controlers
         public IActionResult PartiallyUpdateOneBook( [FromRoute(Name = "Id")] int id, [FromBody] JsonPatchDocument<Book> bookPatch)
         {
             // check
-            var entity = _context.Books 
-                .Where(b => b.Id.Equals(id))
-                .SingleOrDefault();
+            var entity = _manager.Book
+                .GetOneBookById(id , true);
 
             if(entity is null)
                 return NotFound(); //404
 
             bookPatch.ApplyTo(entity);
-            _context.SaveChanges();
+            _manager.Book.Update(entity);
             return NoContent(); //204
         }
     }

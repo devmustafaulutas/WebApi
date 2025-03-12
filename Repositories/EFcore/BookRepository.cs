@@ -24,8 +24,8 @@ namespace Repositories.Efcore
             FindAll(trackChanges)
             .OrderBy(b => b.Id);
         public Book GetOneBookById(int id, bool trackChanges) =>
-            FindByCondition(b=> b.Id.Equals(id),trackChanges)
-            .SingleOrDefault();
+            FindByCondition(b => b.Id.Equals(id), trackChanges)
+            .SingleOrDefault() ?? throw new InvalidOperationException("Book not found");
 
     }
 }

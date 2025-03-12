@@ -2,6 +2,7 @@ using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
+using Repositories.Contracts;
 
 namespace Presentation.Controllers
 {
@@ -62,7 +63,9 @@ namespace Presentation.Controllers
             try
             {
                 if (book is null)
+                {
                     return BadRequest(); //400
+                }
                 
                 _manager.BookService.CreateOneBook(book);
 

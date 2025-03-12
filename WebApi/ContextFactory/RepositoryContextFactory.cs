@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Repositories.Efcore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace WebApi.ContextFactory
 {
@@ -11,14 +12,16 @@ namespace WebApi.ContextFactory
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true) // appsettings'i ekliyoruz!
+                .AddJsonFile("appsettings.json") // appsettings'i ekliyoruz!
                 .Build();
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
-                .UseSqlServer(configuration.GetConnectionString("sqlConnection"),
-                prj => prj.MigrationsAssembly("WebApi"));         
+                .UseMySql(configuration.GetConnectionString("DefaultConnection"),
+                    ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection")),
+                    prj => prj.MigrationsAssembly("WebApi"));
+
+
             return new RepositoryContext(builder.Options);
-        
         }
     }
 

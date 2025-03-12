@@ -11,12 +11,12 @@ namespace WebApi.ContextFactory
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true) // appsettings'i ekliyoruz!
                 .Build();
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
-                .UseSqlServer(configuration.GetConnectionString("sqlConnection")),
-                prj => prj.MigrationsAssembly("WebApi");
-         
+                .UseSqlServer(configuration.GetConnectionString("sqlConnection"),
+                prj => prj.MigrationsAssembly("WebApi"));         
             return new RepositoryContext(builder.Options);
         
         }

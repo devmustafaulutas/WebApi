@@ -31,14 +31,25 @@ namespace Services
 
         public void DeleteOneBook(int id, bool trackChanges)
         {
-            //check entity
-            var entitiy = _manager.Book.GetOneBookById(id , trackChanges);
+            Console.WriteLine($"[SERVICE] DeleteOneBook called for ID: {id}");
 
-            if(entitiy is null)
-                throw new Exception($"Book with id:{id} could not found");
-            _manager.Book.DeleteOneBook(entitiy);
+            var entity = _manager.Book.GetOneBookById(id, trackChanges);
+            if (entity is null)
+            {
+                Console.WriteLine($"[SERVICE] Book with ID {id} not found in DB.");
+                throw new Exception($"Book with id {id} could not be found.");
+            }
+
+            Console.WriteLine($"[SERVICE] Book found: {entity.Title}");
+
+            _manager.Book.DeleteOneBook(entity);
+            Console.WriteLine($"[SERVICE] Book deleted from repository. ID: {id}");
+
             _manager.Save();
+            Console.WriteLine($"[SERVICE] Save method executed after delete.");
         }
+
+
 
         public IEnumerable<Book> GetAllBooks(bool trackChanges)
         {

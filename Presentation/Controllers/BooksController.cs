@@ -2,7 +2,6 @@ using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
-using Repositories.Contracts;
 
 namespace Presentation.Controllers
 {
@@ -73,7 +72,7 @@ namespace Presentation.Controllers
             }
             catch(Exception ex)
             {
-                return BadRequest(ex.Message); // ex.Message hatanın detayları için bilgi veriyor
+                throw new Exception(ex.Message);// ex.Message hatanın detayları için bilgi veriyor
             }
         }
         [HttpPut("{id:int}")]
@@ -94,26 +93,42 @@ namespace Presentation.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Internal server error: {ex.Message}"); // 500: Server error
+                throw new Exception(ex.Message); // 500: Server error
             }
         }
 
                 
         [HttpDelete("{id:int}")]
-        public IActionResult DeleteOneBook([FromRoute(Name = "id")]int id)
+        public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
         {
             try
             {
-                var entitiy = _manager.BookService.GetOneBookById(id, false);
-                if (entitiy is null)
-                    return NotFound(); //404
+                Console.WriteLine($"DeleteOneBook method called with id: {id}");
+
+                if (_manager.BookService == null)
+                {
+                    Console.WriteLine("BookService is NULL! Bağımlılıklar eksik olabilir.");
+                    throw new Exception("BookService is null.");
+                }
+
+                var entity = _manager.BookService.GetOneBookById(id, false);
+                if (entity is null)
+                {
+                    Console.WriteLine($"Book with id {id} not found.");
+                    return NotFound(); // 404 Kitap bulunamadı
+                }
+
+                Console.WriteLine($"Book found: {entity.Id} - {entity.Title}");
 
                 _manager.BookService.DeleteOneBook(id, false);
-                return NoContent();  // 204 No Content: Silme işlemi başarılı
+
+                Console.WriteLine($"Book with id {id} deleted successfully.");
+                return NoContent();  // 204 No Content
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Internal server error: {ex.Message}");  // 500: Server error
+                Console.WriteLine($"Error in DeleteOneBook: {ex.Message}");
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
 
@@ -137,7 +152,7 @@ namespace Presentation.Controllers
             }
             catch(Exception ex)
             {
-                return StatusCode(500, $"Internal server error: {ex.Message}"); // 500: Server error
+                throw new Exception(ex.Message);
             }
         }
     }

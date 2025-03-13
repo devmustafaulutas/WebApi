@@ -1,3 +1,4 @@
+using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -34,7 +35,7 @@ namespace Presentation.Controllers
             .GetOneBookById(id , false);
             if(book is null)
             {
-                return NotFound(); //404
+                throw new BookNotFoundException(id);
             }
             return Ok(book);
 

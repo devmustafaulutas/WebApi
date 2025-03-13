@@ -1,11 +1,18 @@
 using NLog;
+using NLog.Web;
 using Services.Contracts;
 using WebApi.Extentions;
-var builder = WebApplication.CreateBuilder(args);
 
+
+var builder = WebApplication.CreateBuilder(args);
 // Add Logger
 
-LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(),"/nlog.config"));
+var logger = LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
+logger.Debug("Application starting...");
+// Default log sağlayıcılarını kapatıp nlog'u entegre etme 
+builder.Logging.ClearProviders();
+builder.Host.UseNLog();
+
 // Add services to the container.
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
@@ -28,8 +35,8 @@ var app = builder.Build();
 //app oluştuktan sonra ihtiyaç duyduğumuz servisler böyle eklenicek.
 
 // ----------
-var logger = app.Services.GetRequiredService<ILoggerService>();
-app.ConfigureExceptionHandler(logger);
+var loggerService = app.Services.GetRequiredService<ILoggerService>();
+app.ConfigureExceptionHandler(loggerService);
 // ----------
 
 
@@ -43,10 +50,9 @@ if(app.Environment.IsProduction())
 {
     app.UseHsts();
 }
+
+
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

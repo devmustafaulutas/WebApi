@@ -26,6 +26,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
+builder.Services.AddAutoMapper(typeof(Program));
 
 // Veritabanı
 builder.Services.ConfigureMySqlContext(builder.Configuration);

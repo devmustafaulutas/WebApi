@@ -485,3 +485,9 @@ LIMIT 2
 2025-03-13 14:13:47.6376 DEBUG Request did not match any endpoints
 2025-03-13 14:13:47.6376 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1113ms
 2025-03-13 14:15:43.6257 DEBUG Connection id "0HNB23P5LNJQC" received FIN.
+2025-03-13 14:15:43.6257 DEBUG Connection id "0HNB23P5LNJQC" is closed. The last processed stream ID was 111.
+2025-03-13 14:15:43.6257 DEBUG Connection id "0HNB23P5LNJQC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-13 14:15:43.6257 DEBUG Connection id "0HNB23P5LNJQC" stopped.
+2025-03-13 15:56:54.9951 INFO Application is shutting down...
+2025-03-13 15:56:54.9951 DEBUG Hosting stopping
+2025-03-13 15:56:55.0019 DEBUG Hosting stopped

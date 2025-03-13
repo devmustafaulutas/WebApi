@@ -1,11 +1,7 @@
 using Services.Contracts;
 using Entities.Models;
 using Repositories.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 
 namespace Services
@@ -13,17 +9,16 @@ namespace Services
     public class BookManager : IBookService
     {
         private readonly IRepositoryManager _manager;
-
-        public BookManager(IRepositoryManager manager)
+        private readonly ILoggerService _logger;
+        public BookManager(IRepositoryManager manager , 
+            ILoggerService logger)
         {
             _manager = manager;
+            _logger = logger;
         }
 
         public Book CreateOneBook(Book book)
         {
-            if(book is null)
-                throw new ArgumentNullException(nameof(book));
-
             _manager.Book.CreateOneBook(book);
             _manager.Save();
             return book;
@@ -31,22 +26,16 @@ namespace Services
 
         public void DeleteOneBook(int id, bool trackChanges)
         {
-            Console.WriteLine($"[SERVICE] DeleteOneBook called for ID: {id}");
 
             var entity = _manager.Book.GetOneBookById(id, trackChanges);
             if (entity is null)
             {
-                Console.WriteLine($"[SERVICE] Book with ID {id} not found in DB.");
-                throw new Exception($"Book with id {id} could not be found.");
+                var message = $"The book with id:{id} could not found.";
+                _logger.LogInfo(message);
+                throw new Exception($"Book with id {id} could not found.");
             }
-
-            Console.WriteLine($"[SERVICE] Book found: {entity.Title}");
-
             _manager.Book.DeleteOneBook(entity);
-            Console.WriteLine($"[SERVICE] Book deleted from repository. ID: {id}");
-
             _manager.Save();
-            Console.WriteLine($"[SERVICE] Save method executed after delete.");
         }
 
 
@@ -66,10 +55,11 @@ namespace Services
             // Check entity
             var entitiy = _manager.Book.GetOneBookById(id,trackChanges);
             if (entitiy is null)
-                throw new Exception($"Book with id:{id} could not found");
-            //check params
-            if(book is null)
-                throw new ArgumentNullException(nameof(book));
+            {
+                string msg = $"Book with id:{id} could not found.";
+                _logger.LogInfo(msg);
+                throw new Exception(msg);
+            }
 
             entitiy.Title = book.Title;
             entitiy.Price = book.Price;

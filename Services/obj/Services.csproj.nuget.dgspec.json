@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\services\\Services.csproj": {}
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj": {}
   },
   "projects": {
     "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Entities\\Entities.csproj": {
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\services\\Services.csproj": {
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\services\\Services.csproj",
+        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\services\\obj\\",
+        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -202,7 +202,7 @@
           "dependencies": {
             "NLog.Extensions.Logging": {
               "target": "Package",
-              "version": "[5.4.0, )"
+              "version": "[5.2.0, )"
             }
           },
           "imports": [

@@ -11,15 +11,10 @@ public static class ServicesExtentions
             options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
                 ServerVersion.AutoDetect(configuration.GetConnectionString("DefaultConnection"))));
 
-    public static void ConfigureRepositoryManager(this IServiceCollection services)
-    {
+    public static void ConfigureRepositoryManager(this IServiceCollection services) =>
         services.AddScoped<IRepositoryManager, RepositoryManager>();
-        services.AddScoped<IBookRepository, BookRepository>(); // EKLENDİ!
-    }
-
-    public static void ConfigureServiceManager(this IServiceCollection services)
-    {
+    public static void ConfigureServiceManager(this IServiceCollection services) =>
         services.AddScoped<IServiceManager, ServiceManager>();
-        services.AddScoped<IBookService, BookManager>(); // EKLENDİ!
-    }
+    public static void ConfigureLoggerService(this IServiceCollection services) =>
+        services.AddSingleton<ILoggerService , LoggerManager>();
 }

@@ -1,9 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using Repositories.Efcore;
-using Presentation;
+using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add Logger
+
+LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(),"/nlog.config"));
 // Add services to the container.
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
@@ -16,6 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureLoggerService();
 
 // Veritabanı
 builder.Services.ConfigureMySqlContext(builder.Configuration);

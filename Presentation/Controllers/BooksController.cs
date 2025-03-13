@@ -58,14 +58,8 @@ namespace Presentation.Controllers
         public IActionResult UpdateOneBook([FromRoute(Name = "id")]int id ,
             [FromBody] Book book)
         {
-
-            if (book is null)
-                return BadRequest(); //400
-
-            var existingBook = _manager.BookService.GetOneBookById(id, true);
-
-            if (existingBook is null)
-                return NotFound(); //404
+            if(book is null)
+                return BadRequest();
 
             _manager.BookService.UpdateOneBook(id, book, true);
 
@@ -75,44 +69,22 @@ namespace Presentation.Controllers
         [HttpDelete("{id:int}")]
         public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
         {
-            if (_manager.BookService == null)
-            {
-                throw new Exception("BookService is null.");
-            }
-
-            var entity = _manager.BookService.GetOneBookById(id, false);
-
-            if (entity is null)
-            {
-                return NotFound(); // 404 Kitap bulunamadı
-            }
-
             _manager.BookService.DeleteOneBook(id, false);
-
             return NoContent();  // 204 No Content
-            
-
         }
 
 
         [HttpPatch("{id:int}")]
         public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPatch)
         {
-
-            if (bookPatch is null)
-                return BadRequest(); //400
-
             var entity = _manager
                 .BookService
                 .GetOneBookById(id, true);
-
-            if(entity is null)
-                return NotFound(); //404
-
+                
+            bookPatch.ApplyTo(entity);
             _manager.BookService.UpdateOneBook(id , entity, true);
 
             return NoContent(); //204   
-
         }
     }
 }

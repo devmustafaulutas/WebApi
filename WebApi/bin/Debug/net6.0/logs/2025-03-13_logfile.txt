@@ -139,3 +139,349 @@ LIMIT 2
 2025-03-13 14:00:54.3738 INFO Executed endpoint 'Presentation.Controllers.BooksController.DeleteOneBook (Presentation)'
 2025-03-13 14:00:54.3738 DEBUG 'RepositoryContext' disposed.
 2025-03-13 14:00:54.3772 INFO Request finished HTTP/2 DELETE https://localhost:7064/api/books/123 - - - 404 161 application/problem+json;+charset=utf-8 785.4186ms
+2025-03-13 14:03:05.6420 DEBUG Connection id "0HNB23P5LNJQA" is closing.
+2025-03-13 14:03:05.6420 DEBUG Connection id "0HNB23P5LNJQA" is closed. The last processed stream ID was 7.
+2025-03-13 14:03:05.6420 DEBUG Connection id "0HNB23P5LNJQA" received FIN.
+2025-03-13 14:03:05.6420 DEBUG Connection id "0HNB23P5LNJQA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-13 14:03:05.6420 DEBUG Connection id "0HNB23P5LNJQA" stopped.
+2025-03-13 14:06:15.1364 DEBUG Connection id "0HNB23P5LNJQB" accepted.
+2025-03-13 14:06:15.1364 DEBUG Connection id "0HNB23P5LNJQB" started.
+2025-03-13 14:06:15.1364 DEBUG Connection 0HNB23P5LNJQB established using the following protocol: Tls13
+2025-03-13 14:06:15.1421 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:06:15.1421 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:06:15.1421 DEBUG Request did not match any endpoints
+2025-03-13 14:06:15.1421 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:06:15.1421 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:06:15.1421 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.4799ms
+2025-03-13 14:06:15.1577 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:06:15.1577 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.3871ms
+2025-03-13 14:06:15.2002 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:06:15.2002 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:06:15.2002 DEBUG Request did not match any endpoints
+2025-03-13 14:06:15.2002 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.0103ms
+2025-03-13 14:06:18.4325 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:06:18.4325 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:06:18.4325 DEBUG Request did not match any endpoints
+2025-03-13 14:06:18.4325 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:06:18.4325 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:06:18.4325 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.7593ms
+2025-03-13 14:06:18.4428 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:06:18.4428 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1959ms
+2025-03-13 14:06:18.4945 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:06:18.4945 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:06:18.4945 DEBUG Request did not match any endpoints
+2025-03-13 14:06:18.4945 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2856ms
+2025-03-13 14:06:56.8376 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:06:56.8376 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:06:56.8376 DEBUG Request did not match any endpoints
+2025-03-13 14:06:56.8376 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:06:56.8376 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:06:56.8376 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.8026ms
+2025-03-13 14:06:56.8510 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:06:56.8510 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2723ms
+2025-03-13 14:06:56.8898 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:06:56.8898 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:06:56.8898 DEBUG Request did not match any endpoints
+2025-03-13 14:06:56.8911 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2617ms
+2025-03-13 14:08:45.4480 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:08:45.4480 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:08:45.4480 DEBUG Request did not match any endpoints
+2025-03-13 14:08:45.4480 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:08:45.4480 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:08:45.4480 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.0883ms
+2025-03-13 14:08:45.4622 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:08:45.4622 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1510ms
+2025-03-13 14:08:45.5001 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:08:45.5001 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:08:45.5001 DEBUG Request did not match any endpoints
+2025-03-13 14:08:45.5001 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.8966ms
+2025-03-13 14:08:52.9718 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:08:52.9718 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:08:52.9718 DEBUG Request did not match any endpoints
+2025-03-13 14:08:52.9718 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:08:52.9718 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:08:52.9718 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.9844ms
+2025-03-13 14:08:52.9718 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:08:52.9718 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:08:52.9718 DEBUG Request did not match any endpoints
+2025-03-13 14:08:52.9718 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:08:52.9718 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:08:52.9718 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4249ms
+2025-03-13 14:08:52.9858 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:08:52.9858 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1909ms
+2025-03-13 14:08:53.0217 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:08:53.0217 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:08:53.0217 DEBUG Request did not match any endpoints
+2025-03-13 14:08:53.0217 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.8096ms
+2025-03-13 14:09:35.7371 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:09:35.7371 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:09:35.7371 DEBUG Request did not match any endpoints
+2025-03-13 14:09:35.7371 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:09:35.7371 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:09:35.7371 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.1797ms
+2025-03-13 14:09:35.7371 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:09:35.7371 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:09:35.7371 DEBUG Request did not match any endpoints
+2025-03-13 14:09:35.7371 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:09:35.7371 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:09:35.7371 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3788ms
+2025-03-13 14:09:35.7535 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:09:35.7535 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1443ms
+2025-03-13 14:09:35.7954 DEBUG Connection id "0HNB23P5LNJQB" received FIN.
+2025-03-13 14:09:35.7954 DEBUG Connection id "0HNB23P5LNJQB" is closed. The last processed stream ID was 37.
+2025-03-13 14:09:35.7954 DEBUG Connection id "0HNB23P5LNJQB" stopped.
+2025-03-13 14:09:35.7954 DEBUG Connection id "0HNB23P5LNJQB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-13 14:09:35.7954 DEBUG Connection id "0HNB23P5LNJQC" accepted.
+2025-03-13 14:09:35.7972 DEBUG Connection id "0HNB23P5LNJQC" started.
+2025-03-13 14:09:35.7972 DEBUG Connection 0HNB23P5LNJQC established using the following protocol: Tls13
+2025-03-13 14:09:35.7972 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:09:35.7972 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:09:35.7972 DEBUG Request did not match any endpoints
+2025-03-13 14:09:35.7972 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1988ms
+2025-03-13 14:10:08.0392 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:08.0392 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:08.0392 DEBUG Request did not match any endpoints
+2025-03-13 14:10:08.0392 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:08.0392 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:08.0392 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.1945ms
+2025-03-13 14:10:08.0392 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:08.0392 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:08.0392 DEBUG Request did not match any endpoints
+2025-03-13 14:10:08.0392 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:08.0392 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:08.0392 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3164ms
+2025-03-13 14:10:08.0561 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:10:08.0561 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1548ms
+2025-03-13 14:10:08.0980 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:10:08.0980 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:10:08.0980 DEBUG Request did not match any endpoints
+2025-03-13 14:10:08.0980 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.3777ms
+2025-03-13 14:10:23.6898 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:23.6898 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:23.6898 DEBUG Request did not match any endpoints
+2025-03-13 14:10:23.6898 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:23.6898 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:23.6898 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.0025ms
+2025-03-13 14:10:23.6898 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:23.6898 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:23.6898 DEBUG Request did not match any endpoints
+2025-03-13 14:10:23.6898 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:23.6898 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:23.6898 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4589ms
+2025-03-13 14:10:23.7058 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:10:23.7058 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1705ms
+2025-03-13 14:10:23.7449 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:10:23.7449 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:10:23.7449 DEBUG Request did not match any endpoints
+2025-03-13 14:10:23.7449 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.3234ms
+2025-03-13 14:10:29.0375 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:29.0375 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:29.0375 DEBUG Request did not match any endpoints
+2025-03-13 14:10:29.0375 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:29.0375 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:29.0375 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.6768ms
+2025-03-13 14:10:29.0375 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:10:29.0375 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:10:29.0375 DEBUG Request did not match any endpoints
+2025-03-13 14:10:29.0375 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:10:29.0375 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:10:29.0375 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3959ms
+2025-03-13 14:10:29.0526 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:10:29.0526 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1961ms
+2025-03-13 14:10:29.0847 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:10:29.0847 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:10:29.0847 DEBUG Request did not match any endpoints
+2025-03-13 14:10:29.0847 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1865ms
+2025-03-13 14:12:26.0836 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:26.0836 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:26.0836 DEBUG Request did not match any endpoints
+2025-03-13 14:12:26.0836 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:26.0836 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:26.0836 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.2332ms
+2025-03-13 14:12:26.0836 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:26.0836 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:26.0836 DEBUG Request did not match any endpoints
+2025-03-13 14:12:26.0836 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:26.0836 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:26.0836 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4717ms
+2025-03-13 14:12:26.1006 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:12:26.1006 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1487ms
+2025-03-13 14:12:26.1434 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:12:26.1434 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:12:26.1434 DEBUG Request did not match any endpoints
+2025-03-13 14:12:26.1434 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.6167ms
+2025-03-13 14:12:36.1872 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:36.1872 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:36.1872 DEBUG Request did not match any endpoints
+2025-03-13 14:12:36.1903 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:36.1903 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:36.1903 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.2457ms
+2025-03-13 14:12:36.1903 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:36.1903 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:36.1903 DEBUG Request did not match any endpoints
+2025-03-13 14:12:36.1903 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:36.1903 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:36.1903 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3096ms
+2025-03-13 14:12:36.1903 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:12:36.2029 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1459ms
+2025-03-13 14:12:36.2322 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:12:36.2322 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:12:36.2322 DEBUG Request did not match any endpoints
+2025-03-13 14:12:36.2322 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2768ms
+2025-03-13 14:12:54.0687 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:54.0687 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:54.0687 DEBUG Request did not match any endpoints
+2025-03-13 14:12:54.0687 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:54.0687 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:54.0687 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.1951ms
+2025-03-13 14:12:54.0687 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:54.0687 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:54.0687 DEBUG Request did not match any endpoints
+2025-03-13 14:12:54.0687 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:54.0687 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:54.0687 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.2904ms
+2025-03-13 14:12:54.0844 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:12:54.0844 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1716ms
+2025-03-13 14:12:54.1191 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:12:54.1191 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:12:54.1191 DEBUG Request did not match any endpoints
+2025-03-13 14:12:54.1191 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2471ms
+2025-03-13 14:12:56.6893 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:56.6893 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:56.6893 DEBUG Request did not match any endpoints
+2025-03-13 14:12:56.6893 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:56.6893 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:56.6893 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.9245ms
+2025-03-13 14:12:56.6893 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:56.6893 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:56.6893 DEBUG Request did not match any endpoints
+2025-03-13 14:12:56.6893 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:56.6893 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:56.6893 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4684ms
+2025-03-13 14:12:56.7040 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:12:56.7040 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1316ms
+2025-03-13 14:12:56.7371 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:12:56.7371 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:12:56.7371 DEBUG Request did not match any endpoints
+2025-03-13 14:12:56.7371 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1662ms
+2025-03-13 14:12:58.1388 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:58.1388 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:58.1388 DEBUG Request did not match any endpoints
+2025-03-13 14:12:58.1412 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:58.1412 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:58.1412 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.4787ms
+2025-03-13 14:12:58.1412 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:12:58.1412 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:12:58.1412 DEBUG Request did not match any endpoints
+2025-03-13 14:12:58.1412 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:12:58.1412 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:12:58.1412 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.2806ms
+2025-03-13 14:12:58.1412 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:12:58.1412 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1225ms
+2025-03-13 14:12:58.1863 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:12:58.1863 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:12:58.1863 DEBUG Request did not match any endpoints
+2025-03-13 14:12:58.1863 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.0074ms
+2025-03-13 14:13:03.5644 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:03.5644 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:03.5644 DEBUG Request did not match any endpoints
+2025-03-13 14:13:03.5644 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:03.5644 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:03.5644 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8815ms
+2025-03-13 14:13:03.5644 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:03.5644 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:03.5644 DEBUG Request did not match any endpoints
+2025-03-13 14:13:03.5644 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:03.5644 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:03.5644 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.5119ms
+2025-03-13 14:13:03.5836 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:03.5836 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1946ms
+2025-03-13 14:13:03.6132 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:03.6132 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:03.6132 DEBUG Request did not match any endpoints
+2025-03-13 14:13:03.6132 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.4384ms
+2025-03-13 14:13:14.9344 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:14.9344 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:14.9344 DEBUG Request did not match any endpoints
+2025-03-13 14:13:14.9344 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:14.9344 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:14.9344 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8247ms
+2025-03-13 14:13:14.9401 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:14.9401 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:14.9401 DEBUG Request did not match any endpoints
+2025-03-13 14:13:14.9401 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:14.9401 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:14.9401 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.2927ms
+2025-03-13 14:13:14.9401 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:14.9401 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1244ms
+2025-03-13 14:13:14.9837 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:14.9837 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:14.9837 DEBUG Request did not match any endpoints
+2025-03-13 14:13:14.9849 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2009ms
+2025-03-13 14:13:19.6012 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:19.6012 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:19.6012 DEBUG Request did not match any endpoints
+2025-03-13 14:13:19.6012 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:19.6012 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:19.6012 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8621ms
+2025-03-13 14:13:19.6148 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:19.6148 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1611ms
+2025-03-13 14:13:19.6481 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:19.6481 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:19.6481 DEBUG Request did not match any endpoints
+2025-03-13 14:13:19.6481 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 0.9509ms
+2025-03-13 14:13:26.6598 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:26.6598 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:26.6598 DEBUG Request did not match any endpoints
+2025-03-13 14:13:26.6598 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:26.6598 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:26.6598 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8463ms
+2025-03-13 14:13:26.6598 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:26.6598 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:26.6598 DEBUG Request did not match any endpoints
+2025-03-13 14:13:26.6598 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:26.6598 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:26.6598 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.2525ms
+2025-03-13 14:13:26.6749 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:26.6749 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1306ms
+2025-03-13 14:13:26.7064 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:26.7064 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:26.7064 DEBUG Request did not match any endpoints
+2025-03-13 14:13:26.7064 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1812ms
+2025-03-13 14:13:33.9594 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:33.9594 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:33.9594 DEBUG Request did not match any endpoints
+2025-03-13 14:13:33.9594 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:33.9594 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:33.9594 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.4232ms
+2025-03-13 14:13:33.9594 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:33.9594 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:33.9594 DEBUG Request did not match any endpoints
+2025-03-13 14:13:33.9594 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:33.9594 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:33.9594 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3537ms
+2025-03-13 14:13:33.9765 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:33.9765 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1280ms
+2025-03-13 14:13:34.0141 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:34.0141 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:34.0141 DEBUG Request did not match any endpoints
+2025-03-13 14:13:34.0141 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.2273ms
+2025-03-13 14:13:47.5868 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:47.5868 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:47.5868 DEBUG Request did not match any endpoints
+2025-03-13 14:13:47.5868 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:47.5868 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:47.5868 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.1607ms
+2025-03-13 14:13:47.5868 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-13 14:13:47.5868 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-13 14:13:47.5868 DEBUG Request did not match any endpoints
+2025-03-13 14:13:47.5868 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-13 14:13:47.5868 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-13 14:13:47.5868 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4791ms
+2025-03-13 14:13:47.6035 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-13 14:13:47.6035 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1308ms
+2025-03-13 14:13:47.6376 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-13 14:13:47.6376 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-13 14:13:47.6376 DEBUG Request did not match any endpoints
+2025-03-13 14:13:47.6376 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.1113ms
+2025-03-13 14:15:43.6257 DEBUG Connection id "0HNB23P5LNJQC" received FIN.

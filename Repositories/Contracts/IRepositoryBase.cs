@@ -5,7 +5,7 @@ using System.Linq.Expressions; // Bunu eklemeyi unutma!
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repositories
+namespace Repositories.Contracts
 {
     // T = Type (Book, Category, Product gibi)
     public interface IRepositoryBase<T>

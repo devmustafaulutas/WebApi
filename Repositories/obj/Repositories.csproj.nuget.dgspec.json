@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj": {}
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj": {}
   },
   "projects": {
     "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Entities\\Entities.csproj": {
@@ -50,6 +50,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -70,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\obj\\",
+        "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

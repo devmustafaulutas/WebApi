@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using Repositories;
+using Repositories.Contracts;
 
 namespace Repositories.Efcore
 {

@@ -1,0 +1,682 @@
+2025-03-19 14:32:09.7457 DEBUG Application starting...
+2025-03-19 14:32:10.1847 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 14:32:10.2202 DEBUG Hosting starting
+2025-03-19 14:32:10.2774 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 14:32:10.3076 INFO Now listening on: https://localhost:7064
+2025-03-19 14:32:10.3076 INFO Now listening on: http://localhost:5110
+2025-03-19 14:32:10.3076 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 14:32:10.3076 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 14:32:10.3076 INFO Hosting environment: Development
+2025-03-19 14:32:10.3076 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 14:32:10.3076 DEBUG Hosting started
+2025-03-19 14:32:12.2853 INFO Application is shutting down...
+2025-03-19 14:32:12.2853 DEBUG Hosting stopping
+2025-03-19 14:32:12.2912 DEBUG Hosting stopped
+2025-03-19 14:32:54.1202 DEBUG Application starting...
+2025-03-19 14:32:54.2516 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 14:32:54.2770 DEBUG Hosting starting
+2025-03-19 14:32:54.3287 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 14:32:54.3506 INFO Now listening on: https://localhost:7064
+2025-03-19 14:32:54.3506 INFO Now listening on: http://localhost:5110
+2025-03-19 14:32:54.3506 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 14:32:54.3506 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 14:32:54.3506 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 14:32:54.3506 INFO Hosting environment: Development
+2025-03-19 14:32:54.3506 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 14:32:54.3506 DEBUG Hosting started
+2025-03-19 14:38:50.0413 DEBUG Application starting...
+2025-03-19 14:38:50.2163 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 14:38:50.2482 DEBUG Hosting starting
+2025-03-19 14:38:50.2927 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 14:38:50.3128 INFO Now listening on: https://localhost:7064
+2025-03-19 14:38:50.3128 INFO Now listening on: http://localhost:5110
+2025-03-19 14:38:50.3128 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 14:38:50.3128 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 14:38:50.3128 INFO Hosting environment: Development
+2025-03-19 14:38:50.3128 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 14:38:50.3128 DEBUG Hosting started
+2025-03-19 14:39:22.1122 INFO Application is shutting down...
+2025-03-19 14:39:22.1122 DEBUG Hosting stopping
+2025-03-19 14:39:22.1245 DEBUG Hosting stopped
+2025-03-19 15:02:02.3032 DEBUG Application starting...
+2025-03-19 15:02:02.4598 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:02:02.4872 DEBUG Hosting starting
+2025-03-19 15:02:02.5374 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:02:02.5632 INFO Now listening on: https://localhost:7064
+2025-03-19 15:02:02.5632 INFO Now listening on: http://localhost:5110
+2025-03-19 15:02:02.5632 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:02:02.5632 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:02:02.5632 INFO Hosting environment: Development
+2025-03-19 15:02:02.5632 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:02:02.5632 DEBUG Hosting started
+2025-03-19 15:02:10.3711 INFO Application is shutting down...
+2025-03-19 15:02:10.3711 DEBUG Hosting stopping
+2025-03-19 15:02:10.3711 DEBUG Hosting stopped
+2025-03-19 15:02:17.2449 DEBUG Application starting...
+2025-03-19 15:02:17.3780 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:02:17.4027 DEBUG Hosting starting
+2025-03-19 15:02:17.4420 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:02:17.4635 INFO Now listening on: https://localhost:7064
+2025-03-19 15:02:17.4635 INFO Now listening on: http://localhost:5110
+2025-03-19 15:02:17.4635 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:02:17.4635 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:02:17.4635 INFO Hosting environment: Development
+2025-03-19 15:02:17.4635 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:02:17.4635 DEBUG Hosting started
+2025-03-19 15:02:56.0843 INFO Application is shutting down...
+2025-03-19 15:02:56.0869 DEBUG Hosting stopping
+2025-03-19 15:02:56.0869 DEBUG Hosting stopped
+2025-03-19 15:03:50.7737 DEBUG Application starting...
+2025-03-19 15:03:50.9020 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:03:50.9251 DEBUG Hosting starting
+2025-03-19 15:03:50.9650 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:03:50.9855 INFO Now listening on: https://localhost:7064
+2025-03-19 15:03:50.9855 INFO Now listening on: http://localhost:5110
+2025-03-19 15:03:50.9855 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:03:50.9855 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:03:50.9855 INFO Hosting environment: Development
+2025-03-19 15:03:50.9855 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:03:50.9855 DEBUG Hosting started
+2025-03-19 15:04:21.7994 INFO Application is shutting down...
+2025-03-19 15:04:21.7994 DEBUG Hosting stopping
+2025-03-19 15:04:21.8064 DEBUG Hosting stopped
+2025-03-19 15:05:51.2744 DEBUG Application starting...
+2025-03-19 15:05:51.6025 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:05:51.6262 DEBUG Hosting starting
+2025-03-19 15:05:51.6684 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:05:51.6885 INFO Now listening on: https://localhost:7064
+2025-03-19 15:05:51.6885 INFO Now listening on: http://localhost:5110
+2025-03-19 15:05:51.6885 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:05:51.6885 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:05:51.6885 INFO Hosting environment: Development
+2025-03-19 15:05:51.6885 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:05:51.6885 DEBUG Hosting started
+2025-03-19 15:06:22.0432 INFO Application is shutting down...
+2025-03-19 15:06:22.0432 DEBUG Hosting stopping
+2025-03-19 15:06:22.0432 DEBUG Hosting stopped
+2025-03-19 15:08:16.4209 DEBUG Application starting...
+2025-03-19 15:08:16.8595 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:08:16.9060 DEBUG Hosting starting
+2025-03-19 15:08:16.9743 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:08:17.0066 INFO Now listening on: https://localhost:7064
+2025-03-19 15:08:17.0066 INFO Now listening on: http://localhost:5110
+2025-03-19 15:08:17.0066 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:08:17.0066 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:08:17.0066 INFO Hosting environment: Development
+2025-03-19 15:08:17.0066 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:08:17.0066 DEBUG Hosting started
+2025-03-19 15:08:31.3697 INFO Application is shutting down...
+2025-03-19 15:08:31.3697 DEBUG Hosting stopping
+2025-03-19 15:08:31.3697 DEBUG Hosting stopped
+2025-03-19 15:08:53.1790 DEBUG Application starting...
+2025-03-19 15:08:53.3537 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:08:53.3840 DEBUG Hosting starting
+2025-03-19 15:08:53.4212 INFO Now listening on: http://localhost:5000
+2025-03-19 15:08:53.4212 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:08:53.4212 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:08:53.4212 INFO Hosting environment: Development
+2025-03-19 15:08:53.4212 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:08:53.4212 DEBUG Hosting started
+2025-03-19 15:09:00.9787 INFO Application is shutting down...
+2025-03-19 15:09:00.9787 DEBUG Hosting stopping
+2025-03-19 15:09:00.9787 DEBUG Hosting stopped
+2025-03-19 15:09:15.4439 DEBUG Application starting...
+2025-03-19 15:09:15.5763 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:09:15.5995 DEBUG Hosting starting
+2025-03-19 15:09:15.6440 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:09:15.6641 INFO Now listening on: https://localhost:7064
+2025-03-19 15:09:15.6641 INFO Now listening on: http://localhost:5110
+2025-03-19 15:09:15.6641 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:09:15.6641 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:09:15.6641 INFO Hosting environment: Development
+2025-03-19 15:09:15.6641 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:09:15.6641 DEBUG Hosting started
+2025-03-19 15:09:31.1061 INFO Application is shutting down...
+2025-03-19 15:09:31.1061 DEBUG Hosting stopping
+2025-03-19 15:09:31.1061 DEBUG Hosting stopped
+2025-03-19 15:09:37.0527 DEBUG Application starting...
+2025-03-19 15:09:37.1928 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:09:37.2164 DEBUG Hosting starting
+2025-03-19 15:09:37.2563 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:09:37.2767 INFO Now listening on: https://localhost:7064
+2025-03-19 15:09:37.2767 INFO Now listening on: http://localhost:5110
+2025-03-19 15:09:37.2767 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:09:37.2767 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:09:37.2767 INFO Hosting environment: Development
+2025-03-19 15:09:37.2767 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:09:37.2767 DEBUG Hosting started
+2025-03-19 15:09:40.6034 INFO Application is shutting down...
+2025-03-19 15:09:40.6034 DEBUG Hosting stopping
+2025-03-19 15:09:40.6034 DEBUG Hosting stopped
+2025-03-19 15:11:34.9602 DEBUG Application starting...
+2025-03-19 15:11:35.1554 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:11:35.1998 DEBUG Hosting starting
+2025-03-19 15:11:35.2780 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:11:35.3129 INFO Now listening on: https://localhost:7064
+2025-03-19 15:11:35.3129 INFO Now listening on: http://localhost:5110
+2025-03-19 15:11:35.3129 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:11:35.3129 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:11:35.3129 INFO Hosting environment: Development
+2025-03-19 15:11:35.3129 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:11:35.3129 DEBUG Hosting started
+2025-03-19 15:12:30.2592 DEBUG Application starting...
+2025-03-19 15:12:30.6848 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:12:30.7556 DEBUG Hosting starting
+2025-03-19 15:12:30.8842 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:12:30.9294 INFO Now listening on: https://localhost:7064
+2025-03-19 15:12:30.9294 INFO Now listening on: http://localhost:5110
+2025-03-19 15:12:30.9294 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:12:30.9294 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:12:30.9294 INFO Hosting environment: Development
+2025-03-19 15:12:30.9294 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:12:30.9294 DEBUG Hosting started
+2025-03-19 15:14:13.0897 DEBUG Application starting...
+2025-03-19 15:14:13.2285 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:14:13.2542 DEBUG Hosting starting
+2025-03-19 15:14:13.2987 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:14:13.3192 INFO Now listening on: https://localhost:7064
+2025-03-19 15:14:13.3192 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:14:13.3192 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:14:13.3192 INFO Hosting environment: Development
+2025-03-19 15:14:13.3192 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:14:13.3192 DEBUG Hosting started
+2025-03-19 15:14:29.1604 INFO Application is shutting down...
+2025-03-19 15:14:29.1604 DEBUG Hosting stopping
+2025-03-19 15:14:29.1677 DEBUG Hosting stopped
+2025-03-19 15:14:45.8349 DEBUG Application starting...
+2025-03-19 15:14:46.4129 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:14:46.4515 DEBUG Hosting starting
+2025-03-19 15:14:46.5170 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:14:46.5468 INFO Now listening on: https://localhost:8080
+2025-03-19 15:14:46.5468 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:14:46.5468 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 15:14:46.5468 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:14:46.5468 INFO Hosting environment: Development
+2025-03-19 15:14:46.5468 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:14:46.5468 DEBUG Hosting started
+2025-03-19 15:15:24.7342 INFO Application is shutting down...
+2025-03-19 15:15:24.7342 DEBUG Hosting stopping
+2025-03-19 15:15:24.7439 DEBUG Hosting stopped
+2025-03-19 15:18:05.5452 DEBUG Application starting...
+2025-03-19 15:18:05.7319 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:18:05.7580 DEBUG Hosting starting
+2025-03-19 15:18:05.8031 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:18:05.8256 INFO Now listening on: https://localhost:8080
+2025-03-19 15:18:05.8256 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:18:05.8256 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:18:05.8256 INFO Hosting environment: Development
+2025-03-19 15:18:05.8256 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-19 15:18:05.8256 DEBUG Hosting started
+2025-03-19 15:18:11.3876 INFO Application is shutting down...
+2025-03-19 15:18:11.3876 DEBUG Hosting stopping
+2025-03-19 15:18:11.3876 DEBUG Hosting stopped
+2025-03-19 15:30:10.5012 DEBUG Application starting...
+2025-03-19 15:30:11.0033 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:30:11.0827 DEBUG Hosting starting
+2025-03-19 15:30:11.1566 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:30:11.1909 INFO Now listening on: https://localhost:8080
+2025-03-19 15:30:11.1909 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:30:11.1909 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 15:30:11.1909 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:30:11.1909 INFO Hosting environment: Development
+2025-03-19 15:30:11.1909 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:30:11.1909 DEBUG Hosting started
+2025-03-19 15:34:06.3254 DEBUG Application starting...
+2025-03-19 15:34:06.7732 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:34:06.8425 DEBUG Hosting starting
+2025-03-19 15:34:06.9015 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:34:06.9284 INFO Now listening on: https://localhost:8080
+2025-03-19 15:34:06.9284 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:34:06.9284 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 15:34:06.9284 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:34:06.9284 INFO Hosting environment: Development
+2025-03-19 15:34:06.9284 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:34:06.9284 DEBUG Hosting started
+2025-03-19 15:34:21.8006 INFO Application is shutting down...
+2025-03-19 15:34:21.8006 DEBUG Hosting stopping
+2025-03-19 15:34:21.8097 DEBUG Hosting stopped
+2025-03-19 15:34:43.9134 DEBUG Application starting...
+2025-03-19 15:34:44.1128 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:34:44.1513 DEBUG Hosting starting
+2025-03-19 15:34:44.2261 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:34:44.2654 INFO Now listening on: https://localhost:8080
+2025-03-19 15:34:44.2654 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:34:44.2654 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 15:34:44.2654 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:34:44.2654 INFO Hosting environment: Development
+2025-03-19 15:34:44.2654 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:34:44.2654 DEBUG Hosting started
+2025-03-19 15:35:49.8547 INFO Application is shutting down...
+2025-03-19 15:35:49.8547 DEBUG Hosting stopping
+2025-03-19 15:35:49.8547 DEBUG Hosting stopped
+2025-03-19 15:47:38.1341 DEBUG Application starting...
+2025-03-19 15:47:38.6539 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 15:47:38.6928 DEBUG Hosting starting
+2025-03-19 15:47:38.7603 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 15:47:38.7908 INFO Now listening on: https://localhost:8000
+2025-03-19 15:47:38.7908 INFO Now listening on: http://localhost:8001
+2025-03-19 15:47:38.7908 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 15:47:38.7908 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 15:47:38.7908 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 15:47:38.7908 INFO Hosting environment: Development
+2025-03-19 15:47:38.7908 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 15:47:38.7908 DEBUG Hosting started
+2025-03-19 15:48:52.1862 INFO Application is shutting down...
+2025-03-19 15:48:52.1862 DEBUG Hosting stopping
+2025-03-19 15:48:52.1943 DEBUG Hosting stopped
+2025-03-19 16:05:56.1114 DEBUG Application starting...
+2025-03-19 16:05:56.7130 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:05:56.8149 DEBUG Hosting starting
+2025-03-19 16:05:56.9379 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:05:56.9794 INFO Now listening on: https://localhost:8000
+2025-03-19 16:05:56.9794 INFO Now listening on: http://localhost:8001
+2025-03-19 16:05:56.9794 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:05:56.9794 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:05:56.9794 INFO Hosting environment: Development
+2025-03-19 16:05:56.9794 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:05:56.9794 DEBUG Hosting started
+2025-03-19 16:08:23.4599 DEBUG Application starting...
+2025-03-19 16:08:23.8689 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:08:23.8988 DEBUG Hosting starting
+2025-03-19 16:08:23.9948 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:08:24.0202 INFO Now listening on: https://localhost:8000
+2025-03-19 16:08:24.0202 INFO Now listening on: http://localhost:8001
+2025-03-19 16:08:24.0202 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:08:24.0202 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:08:24.0202 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:08:24.0202 INFO Hosting environment: Development
+2025-03-19 16:08:24.0202 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:08:24.0202 DEBUG Hosting started
+2025-03-19 16:08:43.5408 INFO Application is shutting down...
+2025-03-19 16:08:43.5408 DEBUG Hosting stopping
+2025-03-19 16:08:43.5408 DEBUG Hosting stopped
+2025-03-19 16:09:43.1222 DEBUG Application starting...
+2025-03-19 16:09:43.7424 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:09:43.7877 DEBUG Hosting starting
+2025-03-19 16:09:43.8581 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:09:43.8904 INFO Now listening on: https://localhost:8000
+2025-03-19 16:09:43.8904 INFO Now listening on: http://localhost:8001
+2025-03-19 16:09:43.8904 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:09:43.8904 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:09:43.8904 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:09:43.8904 INFO Hosting environment: Development
+2025-03-19 16:09:43.8904 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:09:43.8904 DEBUG Hosting started
+2025-03-19 16:09:49.1784 INFO Application is shutting down...
+2025-03-19 16:09:49.1784 DEBUG Hosting stopping
+2025-03-19 16:09:49.1784 DEBUG Hosting stopped
+2025-03-19 16:15:57.3878 DEBUG Application starting...
+2025-03-19 16:15:57.7437 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:15:57.7689 DEBUG Hosting starting
+2025-03-19 16:15:57.8154 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:15:57.8377 INFO Now listening on: https://localhost:7064
+2025-03-19 16:15:57.8377 INFO Now listening on: http://localhost:5110
+2025-03-19 16:15:57.8377 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:15:57.8377 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:15:57.8377 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:15:57.8377 INFO Hosting environment: Development
+2025-03-19 16:15:57.8377 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:15:57.8377 DEBUG Hosting started
+2025-03-19 16:17:08.2751 INFO Application is shutting down...
+2025-03-19 16:17:08.2751 DEBUG Hosting stopping
+2025-03-19 16:17:08.2751 DEBUG Hosting stopped
+2025-03-19 16:40:11.7460 DEBUG Application starting...
+2025-03-19 16:40:12.3010 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:40:12.4049 DEBUG Hosting starting
+2025-03-19 16:40:12.6773 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:40:12.8059 INFO Now listening on: https://localhost:7064
+2025-03-19 16:40:12.8059 INFO Now listening on: http://localhost:5110
+2025-03-19 16:40:12.8059 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:40:12.8059 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:40:12.8059 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:40:12.8059 INFO Hosting environment: Development
+2025-03-19 16:40:12.8059 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:40:12.8059 DEBUG Hosting started
+2025-03-19 16:40:30.6569 INFO Application is shutting down...
+2025-03-19 16:40:30.6569 DEBUG Hosting stopping
+2025-03-19 16:40:30.6651 DEBUG Hosting stopped
+2025-03-19 16:42:58.2108 DEBUG Application starting...
+2025-03-19 16:42:58.5374 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:42:58.5622 DEBUG Hosting starting
+2025-03-19 16:42:58.6029 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:42:58.6218 INFO Now listening on: https://localhost:7064
+2025-03-19 16:42:58.6218 INFO Now listening on: http://localhost:5110
+2025-03-19 16:42:58.6218 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:42:58.6218 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:42:58.6218 INFO Hosting environment: Development
+2025-03-19 16:42:58.6218 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:42:58.6218 DEBUG Hosting started
+2025-03-19 16:43:07.4565 INFO Application is shutting down...
+2025-03-19 16:43:07.4565 DEBUG Hosting stopping
+2025-03-19 16:43:07.4618 DEBUG Hosting stopped
+2025-03-19 16:45:09.6047 DEBUG Application starting...
+2025-03-19 16:45:09.9129 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:45:09.9371 DEBUG Hosting starting
+2025-03-19 16:45:09.9771 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:45:09.9969 INFO Now listening on: https://localhost:7064
+2025-03-19 16:45:09.9969 INFO Now listening on: http://localhost:5110
+2025-03-19 16:45:09.9969 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:45:09.9969 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:45:09.9969 INFO Hosting environment: Development
+2025-03-19 16:45:09.9969 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:45:09.9969 DEBUG Hosting started
+2025-03-19 16:45:15.6185 INFO Application is shutting down...
+2025-03-19 16:45:15.6185 DEBUG Hosting stopping
+2025-03-19 16:45:15.6185 DEBUG Hosting stopped
+2025-03-19 16:51:57.6223 DEBUG Application starting...
+2025-03-19 16:51:57.7767 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:51:57.8005 DEBUG Hosting starting
+2025-03-19 16:51:57.8348 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:51:57.8348 DEBUG No listening endpoints were configured. Binding to http://localhost:5000 and https://localhost:5001 by default.
+2025-03-19 16:51:57.8348 INFO Now listening on: http://localhost:5000
+2025-03-19 16:51:57.8348 INFO Now listening on: https://localhost:5001
+2025-03-19 16:51:57.8495 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:51:57.8495 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:51:57.8495 INFO Hosting environment: Production
+2025-03-19 16:51:57.8495 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:51:57.8495 DEBUG Hosting started
+2025-03-19 16:52:00.4679 INFO Application is shutting down...
+2025-03-19 16:52:00.4679 DEBUG Hosting stopping
+2025-03-19 16:52:00.4820 DEBUG Hosting stopped
+2025-03-19 16:52:19.1194 DEBUG Application starting...
+2025-03-19 16:52:19.3301 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:52:19.3695 DEBUG Hosting starting
+2025-03-19 16:52:19.4344 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:52:19.4647 INFO Now listening on: https://localhost:7064
+2025-03-19 16:52:19.4647 INFO Now listening on: http://localhost:5110
+2025-03-19 16:52:19.4647 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:52:19.4647 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:52:19.4647 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:52:19.4647 INFO Hosting environment: Development
+2025-03-19 16:52:19.4647 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:52:19.4647 DEBUG Hosting started
+2025-03-19 16:52:19.6111 INFO Application is shutting down...
+2025-03-19 16:52:19.6111 DEBUG Hosting stopping
+2025-03-19 16:52:19.6204 DEBUG Hosting stopped
+2025-03-19 16:53:15.2410 DEBUG Application starting...
+2025-03-19 16:53:15.4432 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:53:15.4790 DEBUG Hosting starting
+2025-03-19 16:53:15.5445 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:53:15.5764 INFO Now listening on: https://localhost:7064
+2025-03-19 16:53:15.5764 INFO Now listening on: http://localhost:5110
+2025-03-19 16:53:15.5764 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:53:15.5764 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:53:15.5764 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:53:15.5764 INFO Hosting environment: Development
+2025-03-19 16:53:15.5764 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:53:15.5764 DEBUG Hosting started
+2025-03-19 16:53:28.1843 INFO Application is shutting down...
+2025-03-19 16:53:28.1843 DEBUG Hosting stopping
+2025-03-19 16:53:28.1943 DEBUG Hosting stopped
+2025-03-19 16:55:05.8071 DEBUG Application starting...
+2025-03-19 16:55:06.2192 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:55:06.2486 DEBUG Hosting starting
+2025-03-19 16:55:06.2994 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:55:06.3237 INFO Now listening on: https://localhost:7064
+2025-03-19 16:55:06.3237 INFO Now listening on: http://localhost:5110
+2025-03-19 16:55:06.3237 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:55:06.3237 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:55:06.3237 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:55:06.3237 INFO Hosting environment: Development
+2025-03-19 16:55:06.3237 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:55:06.3237 DEBUG Hosting started
+2025-03-19 16:55:06.4420 INFO Application is shutting down...
+2025-03-19 16:55:06.4420 DEBUG Hosting stopping
+2025-03-19 16:55:06.4475 DEBUG Hosting stopped
+2025-03-19 16:55:17.6568 DEBUG Application starting...
+2025-03-19 16:55:17.8916 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:55:17.9359 DEBUG Hosting starting
+2025-03-19 16:55:18.0185 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:55:18.0605 INFO Now listening on: https://localhost:7064
+2025-03-19 16:55:18.0605 INFO Now listening on: http://localhost:5110
+2025-03-19 16:55:18.0605 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:55:18.0605 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 16:55:18.0605 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:55:18.0605 INFO Hosting environment: Development
+2025-03-19 16:55:18.0605 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:55:18.0605 DEBUG Hosting started
+2025-03-19 16:57:23.8614 DEBUG Application starting...
+2025-03-19 16:57:24.2457 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 16:57:24.3089 DEBUG Hosting starting
+2025-03-19 16:57:24.4350 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 16:57:24.4816 INFO Now listening on: https://localhost:7064
+2025-03-19 16:57:24.4816 INFO Now listening on: http://localhost:5110
+2025-03-19 16:57:24.4816 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 16:57:24.4816 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 16:57:24.4816 INFO Hosting environment: Development
+2025-03-19 16:57:24.4816 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 16:57:24.4816 DEBUG Hosting started
+2025-03-19 16:59:00.1813 DEBUG Config reload token fired. Checking for changes...
+2025-03-19 16:59:00.4464 DEBUG Config reload token fired. Checking for changes...
+2025-03-19 16:59:22.9879 DEBUG Connection id "0HNB6TP0ARBB3" accepted.
+2025-03-19 16:59:23.0003 DEBUG Connection id "0HNB6TP0ARBB3" started.
+2025-03-19 16:59:23.0695 DEBUG Connection 0HNB6TP0ARBB3 established using the following protocol: Tls13
+2025-03-19 16:59:23.1148 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-19 16:59:23.1172 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-19 16:59:23.1350 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-19 16:59:23.1350 DEBUG Request did not match any endpoints
+2025-03-19 16:59:23.2586 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 145.9457ms
+2025-03-19 16:59:23.2936 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui.css - -
+2025-03-19 16:59:23.2936 DEBUG No candidates found for the request path '/swagger/swagger-ui.css'
+2025-03-19 16:59:23.2936 DEBUG Request did not match any endpoints
+2025-03-19 16:59:23.3192 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui-bundle.js - -
+2025-03-19 16:59:23.3192 DEBUG No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-03-19 16:59:23.3192 DEBUG Request did not match any endpoints
+2025-03-19 16:59:23.3192 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - -
+2025-03-19 16:59:23.3192 DEBUG No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-03-19 16:59:23.3192 DEBUG Request did not match any endpoints
+2025-03-19 16:59:23.3378 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-19 16:59:23.3805 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-19 16:59:23.3832 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui.css - - - 200 144929 text/css 89.3850ms
+2025-03-19 16:59:23.3832 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-19 16:59:23.3832 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 69.7599ms
+2025-03-19 16:59:23.3832 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 66.3565ms
+2025-03-19 16:59:23.5048 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-19 16:59:23.5048 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-19 16:59:23.5048 DEBUG Request did not match any endpoints
+2025-03-19 16:59:23.6202 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.4152ms
+2025-03-19 16:59:33.9812 INFO Request starting HTTP/2 GET https://localhost:7064/api/books - -
+2025-03-19 16:59:33.9812 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-19 16:59:33.9812 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-19 16:59:33.9812 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 16:59:33.9812 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-19 16:59:33.9912 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 16:59:34.0262 INFO Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllBooks() on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-19 16:59:34.0262 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-19 16:59:34.0262 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-19 16:59:34.0262 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-03-19 16:59:34.0262 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-19 16:59:34.0262 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-19 16:59:34.0262 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 16:59:53.5745 INFO Executed action Presentation.Controllers.BooksController.GetAllBooks (Presentation) in 19541.9159ms
+2025-03-19 16:59:53.5745 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 16:59:53.5745 ERROR An unhandled exception has occurred while executing the request.
+2025-03-19 16:59:53.5745 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-19 16:59:53.5745 INFO Request finished HTTP/2 GET https://localhost:7064/api/books - - - 500 - application/json 19602.4483ms
+2025-03-19 17:00:47.9133 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json-patch+json 48
+2025-03-19 17:00:47.9133 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-19 17:00:47.9133 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBook (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-19 17:00:47.9133 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBook (Presentation)'
+2025-03-19 17:00:47.9133 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-19 17:00:47.9133 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBook (Presentation)'
+2025-03-19 17:00:47.9397 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateOneBook(Entities.Models.Book) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-19 17:00:47.9397 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-19 17:00:47.9397 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-19 17:00:47.9397 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-03-19 17:00:47.9397 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-19 17:00:47.9397 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-19 17:00:47.9397 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 17:00:47.9717 INFO Executed action Presentation.Controllers.BooksController.CreateOneBook (Presentation) in 31.835ms
+2025-03-19 17:00:47.9717 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBook (Presentation)'
+2025-03-19 17:00:47.9717 ERROR An unhandled exception has occurred while executing the request.
+2025-03-19 17:00:47.9717 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-19 17:00:47.9717 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json-patch+json 48 - 500 - application/json 60.0294ms
+2025-03-19 17:00:47.9717 DEBUG Connection id "0HNB6TP0ARBB3", Request id "0HNB6TP0ARBB3:0000000D": started reading request body.
+2025-03-19 17:00:47.9717 DEBUG Connection id "0HNB6TP0ARBB3", Request id "0HNB6TP0ARBB3:0000000D": done reading request body.
+2025-03-19 17:04:30.2715 DEBUG Application starting...
+2025-03-19 17:04:30.5604 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 17:04:30.6525 DEBUG Hosting starting
+2025-03-19 17:04:30.7247 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 17:04:30.7574 INFO Now listening on: https://localhost:7064
+2025-03-19 17:04:30.7574 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 17:04:30.7574 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-19 17:04:30.7574 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 17:04:30.7574 INFO Hosting environment: Development
+2025-03-19 17:04:30.7574 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 17:04:30.7574 DEBUG Hosting started
+2025-03-19 17:04:40.2422 INFO Application is shutting down...
+2025-03-19 17:04:40.2422 DEBUG Hosting stopping
+2025-03-19 17:04:40.2422 DEBUG Hosting stopped
+2025-03-19 17:05:54.8576 DEBUG Application starting...
+2025-03-19 17:05:55.4491 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-19 17:05:55.4929 DEBUG Hosting starting
+2025-03-19 17:05:55.5609 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-19 17:05:55.5905 INFO Now listening on: https://localhost:7064
+2025-03-19 17:05:55.5905 DEBUG Loaded hosting startup assembly WebApi
+2025-03-19 17:05:55.5905 INFO Application started. Press Ctrl+C to shut down.
+2025-03-19 17:05:55.5905 INFO Hosting environment: Development
+2025-03-19 17:05:55.5905 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-19 17:05:55.5905 DEBUG Hosting started
+2025-03-19 17:05:57.0980 DEBUG Connection id "0HNB6TSLPC79V" accepted.
+2025-03-19 17:05:57.0980 DEBUG Connection id "0HNB6TSLPC79V" started.
+2025-03-19 17:05:57.1474 DEBUG Connection 0HNB6TSLPC79V established using the following protocol: Tls13
+2025-03-19 17:05:57.1867 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-19 17:05:57.1867 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-19 17:05:57.2078 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-19 17:05:57.2078 DEBUG Request did not match any endpoints
+2025-03-19 17:05:57.2880 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 102.3074ms
+2025-03-19 17:05:57.4934 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-19 17:05:57.4934 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-19 17:05:57.4934 DEBUG Request did not match any endpoints
+2025-03-19 17:05:57.5904 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.9855ms
+2025-03-19 17:06:00.6506 INFO Request starting HTTP/2 GET https://localhost:7064/api/books - -
+2025-03-19 17:06:00.6506 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-19 17:06:00.6506 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-19 17:06:00.6506 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 17:06:00.6506 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-19 17:06:00.6506 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 17:06:00.6715 INFO Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllBooks() on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-19 17:06:00.6715 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-19 17:06:00.6715 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-19 17:06:00.6715 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-03-19 17:06:00.6715 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-19 17:06:00.6715 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-19 17:06:00.6715 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 17:06:01.1434 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-19 17:06:01.2305 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 17:06:01.6058 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-19 17:06:01.6058 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-19 17:06:01.6058 DEBUG No information found on request to perform content negotiation.
+2025-03-19 17:06:01.6058 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-03-19 17:06:01.6058 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-03-19 17:06:01.6058 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-03-19 17:06:01.6058 INFO Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Entities.Models.Book, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-19 17:06:01.6207 DEBUG Buffering IAsyncEnumerable instance of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Entities.Models.Book, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-19 17:06:01.6465 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .AsNoTracking()
+    .OrderBy(b => b.Id)'
+2025-03-19 17:06:01.7756 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+        SELECT b.Id, b.Price, b.Title
+        FROM Books AS b
+        ORDER BY b.Id ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    Repositories.Efcore.RepositoryContext, 
+    False, 
+    False, 
+    True
+)'
+2025-03-19 17:06:01.8005 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-19 17:06:01.8050 DEBUG Created DbCommand for 'ExecuteReader' (3ms).
+2025-03-19 17:06:01.8050 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:01.8463 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:01.8523 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+2025-03-19 17:06:01.8809 INFO Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+2025-03-19 17:06:01.8962 DEBUG A data reader was disposed.
+2025-03-19 17:06:01.8984 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:01.8984 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:01.9696 INFO Executed action Presentation.Controllers.BooksController.GetAllBooks (Presentation) in 1295.4985ms
+2025-03-19 17:06:01.9696 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetAllBooks (Presentation)'
+2025-03-19 17:06:01.9696 DEBUG 'RepositoryContext' disposed.
+2025-03-19 17:06:01.9696 INFO Request finished HTTP/2 GET https://localhost:7064/api/books - - - 200 407 application/json;+charset=utf-8 1322.9419ms
+2025-03-19 17:06:28.9667 INFO Request starting HTTP/2 GET https://localhost:7064/api/books/1 - -
+2025-03-19 17:06:28.9667 DEBUG 1 candidate(s) found for the request path '/api/books/1'
+2025-03-19 17:06:28.9667 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetOneBook (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/1'
+2025-03-19 17:06:28.9667 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetOneBook (Presentation)'
+2025-03-19 17:06:28.9667 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-19 17:06:28.9667 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetOneBook (Presentation)'
+2025-03-19 17:06:28.9759 INFO Route matched with {action = "GetOneBook", controller = "Books"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOneBook(Int32) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-19 17:06:28.9759 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-19 17:06:28.9759 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-19 17:06:28.9759 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-03-19 17:06:28.9759 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-19 17:06:28.9759 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-19 17:06:28.9759 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 17:06:28.9759 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-19 17:06:28.9759 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-19 17:06:28.9759 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-19 17:06:28.9759 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-19 17:06:28.9759 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-19 17:06:28.9759 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-19 17:06:28.9759 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-19 17:06:29.0216 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-19 17:06:29.0216 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .Where(b => b.Id == __id_0)
+    .AsNoTracking()
+    .SingleOrDefault()'
+2025-03-19 17:06:29.0216 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+        SELECT TOP(2) b.Id, b.Price, b.Title
+        FROM Books AS b
+        WHERE b.Id == @__id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    Repositories.Efcore.RepositoryContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2025-03-19 17:06:29.0414 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-19 17:06:29.0414 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-19 17:06:29.0414 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:29.0414 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:29.0542 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-19 17:06:29.0705 INFO Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-19 17:06:29.0705 DEBUG A data reader was disposed.
+2025-03-19 17:06:29.0705 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:29.0705 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-19 17:06:29.0705 INFO Executed action Presentation.Controllers.BooksController.GetOneBook (Presentation) in 97.2504ms
+2025-03-19 17:06:29.0705 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetOneBook (Presentation)'
+2025-03-19 17:06:29.0705 ERROR An unhandled exception has occurred while executing the request.
+2025-03-19 17:06:29.0705 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-19 17:06:29.0705 DEBUG 'RepositoryContext' disposed.
+2025-03-19 17:06:29.0705 INFO Request finished HTTP/2 GET https://localhost:7064/api/books/1 - - - 404 - application/json 109.6525ms
+2025-03-19 17:08:40.3794 DEBUG Connection id "0HNB6TSLPC79V" is closing.
+2025-03-19 17:08:40.3794 DEBUG Connection id "0HNB6TSLPC79V" is closed. The last processed stream ID was 7.
+2025-03-19 17:08:40.3812 DEBUG Connection id "0HNB6TSLPC79V" received FIN.
+2025-03-19 17:08:40.3812 DEBUG Connection id "0HNB6TSLPC79V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-19 17:08:40.3994 DEBUG Connection id "0HNB6TSLPC79V" stopped.

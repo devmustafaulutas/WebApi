@@ -2,6 +2,7 @@ using NLog;
 using NLog.Web;
 using Services.Contracts;
 using WebApi.Extentions;
+using AutoMapper;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,7 +52,6 @@ if(app.Environment.IsProduction())
 {
     app.UseHsts();
 }
-
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

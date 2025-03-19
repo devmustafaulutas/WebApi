@@ -605,11 +605,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj",
+      "projectPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\obj\\",
+      "outputPath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

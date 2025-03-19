@@ -171,6 +171,9 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10"
+        },
         "runtime": {
           "Entities.dll": {
             "assemblyVersion": "1.0.0",

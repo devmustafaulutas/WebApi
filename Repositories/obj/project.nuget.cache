@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jw+MVfKozC4=",
+  "dgSpecHash": "B07eOAX8v9w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\musta\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\musta\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",

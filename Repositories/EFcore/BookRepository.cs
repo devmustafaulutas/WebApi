@@ -23,9 +23,20 @@ namespace Repositories.Efcore
         public IQueryable<Book> GetAllBooks(bool trackChanges) =>
             FindAll(trackChanges)
             .OrderBy(b => b.Id);
-        public Book GetOneBookById(int id, bool trackChanges) =>
-            FindByCondition(b=> b.Id.Equals(id),trackChanges)
-            .SingleOrDefault();
+            
+        public Book GetOneBookById(int id, bool trackChanges)
+        {
+            var book = FindByCondition(b => b.Id == id, trackChanges).SingleOrDefault();
+
+            if (book == null)
+            {
+                // Eğer kitap bulunamazsa, null döndürülmeden önce loglama veya hata mesajı ekleyebilirsiniz.
+                Console.WriteLine($"Book with ID {id} not found.");
+            }
+
+            return book = null!;
+        }
+
 
     }
 }

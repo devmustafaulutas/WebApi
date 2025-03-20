@@ -7489,3 +7489,15 @@ SELECT ROW_COUNT();
 2025-03-20 14:01:05.7661 DEBUG Connection id "0HNB7JITI53DJ" disconnecting.
 2025-03-20 14:01:05.7661 DEBUG Connection id "0HNB7JITI53DJ" stopped.
 2025-03-20 14:01:05.7661 DEBUG Connection id "0HNB7JITI53DJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-20 14:15:20.9911 DEBUG Application starting...
+2025-03-20 14:15:21.2568 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-20 14:15:21.3443 DEBUG Hosting starting
+2025-03-20 14:15:21.4167 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-20 14:15:21.4517 INFO Now listening on: https://localhost:7064
+2025-03-20 14:15:21.4517 INFO Now listening on: http://localhost:5110
+2025-03-20 14:15:21.4517 DEBUG Loaded hosting startup assembly WebApi
+2025-03-20 14:15:21.4517 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-20 14:15:21.4517 INFO Application started. Press Ctrl+C to shut down.
+2025-03-20 14:15:21.4517 INFO Hosting environment: Development
+2025-03-20 14:15:21.4517 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-20 14:15:21.4517 DEBUG Hosting started

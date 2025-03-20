@@ -6,9 +6,8 @@ namespace Entities.DataTransferObjects
     // public record BookDto(int Id, String Title,decimal Price);
     public record BookDto
     {
-        public int Id { get; set; }
-        public String Title { get; set; }
-        public decimal Price { get; set; }
+        public int Id { get; init; }
+        public String Title { get; init; }
+        public decimal Price { get; init; }
     }
-
 }

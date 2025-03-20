@@ -25,7 +25,7 @@ namespace WebApi.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<string>("Title")
                         .IsRequired()

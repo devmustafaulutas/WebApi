@@ -4,6 +4,7 @@ using Services.Contracts;
 using WebApi.Extentions;
 using AutoMapper;
 using WebApi.Utilities.AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,9 +29,11 @@ builder.Services.AddControllers(config =>
 .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
                 .AddNewtonsoftJson();
-builder.Services.AddControllers();
 
-
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

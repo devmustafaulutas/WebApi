@@ -11,7 +11,6 @@
           "AutoMapper": "12.0.1",
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "6.0.10",
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
@@ -851,6 +850,7 @@
           "Entities": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "6.0.10",
           "Microsoft.AspNetCore.Mvc.Core": "2.3.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "Repositories": "1.0.0",
           "Services": "1.0.0"

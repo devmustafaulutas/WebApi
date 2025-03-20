@@ -3,6 +3,7 @@ using NLog.Web;
 using Services.Contracts;
 using WebApi.Extentions;
 using AutoMapper;
+using WebApi.Utilities.AutoMapper;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,16 @@ builder.Logging.ClearProviders();
 builder.Host.UseNLog();
 
 // Add services to the container.
-builder.Services.AddControllers()
+builder.Services.AddControllers(config => 
+{
+    // İçerik pazarlığına açtık api'ımızı fakat hala yeterli değil
+    config.RespectBrowserAcceptHeader = true;
+    // İçerik pazarlığında kabul ettiğimiz format dışındakiler gelmiyor 406 dönüyor
+    config.ReturnHttpNotAcceptable = true;
+})
+//xml formatında çıktı verebilmek için
+.AddCustomCsvFormatter()
+.AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
                 .AddNewtonsoftJson();
 builder.Services.AddControllers();
@@ -27,7 +37,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Veritabanı
 builder.Services.ConfigureMySqlContext(builder.Configuration);

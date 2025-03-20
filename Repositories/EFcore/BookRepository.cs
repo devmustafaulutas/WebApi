@@ -28,13 +28,12 @@ namespace Repositories.Efcore
         {
             var book = FindByCondition(b => b.Id == id, trackChanges).SingleOrDefault();
 
-            if (book == null)
+            if (book is null)
             {
                 // Eğer kitap bulunamazsa, null döndürülmeden önce loglama veya hata mesajı ekleyebilirsiniz.
                 Console.WriteLine($"Book with ID {id} not found.");
             }
-
-            return book = null!;
+            return book;
         }
 
 

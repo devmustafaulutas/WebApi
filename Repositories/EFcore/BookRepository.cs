@@ -1,3 +1,4 @@
+using Entities.Exceptions;
 using Entities.Models;
 using Repositories.Contracts;
 using Repositories.Efcore.Config;
@@ -26,16 +27,19 @@ namespace Repositories.Efcore
             
         public Book GetOneBookById(int id, bool trackChanges)
         {
-            var book = FindByCondition(b => b.Id == id, trackChanges).SingleOrDefault();
-
+            var book = FindByCondition(b => b.Id == id, trackChanges).FirstOrDefault();
+            Console.WriteLine($"{book}");
             if (book is null)
             {
-                // Eğer kitap bulunamazsa, null döndürülmeden önce loglama veya hata mesajı ekleyebilirsiniz.
-                Console.WriteLine($"Book with ID {id} not found.");
+                Console.WriteLine($"❌ Book with ID {id} not found.");
+                throw new BookNotFoundException(id); 
             }
+
+            // Log atalım
+            Console.WriteLine($"✅ Kitap Bulundu: {book.Title} - {book.Price}");
+
             return book;
         }
-
 
     }
 }

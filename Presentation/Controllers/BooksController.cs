@@ -84,16 +84,32 @@ namespace Presentation.Controllers
         public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id, 
         [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
         {
-            if(bookPatch is null)
-                return BadRequest(); //400
+            if (bookPatch is null)
+            {
+                Console.WriteLine("⚠️ bookPatch NULL GELİYOR!"); // Log atalım
+                return BadRequest(); // 400
+            }
 
-            var result = _manager.BookService.GetOneBookForPatch(id , false);
-                
-            bookPatch.ApplyTo(result.bookDtoForUpdate , ModelState);
+            var result = _manager.BookService.GetOneBookForPatch(id , true);
+
+
+            Console.WriteLine("📌 ApplyTo çağrılıyor...");
+
+            bookPatch.ApplyTo(result.bookDtoForUpdate, ModelState);
+
+            Console.WriteLine($"Güncellenen Title: {result.bookDtoForUpdate.Title}");
+            Console.WriteLine($"Güncellenen Price: {result.bookDtoForUpdate.Price}");
+            Console.WriteLine("✅ ApplyTo başarıyla çalıştı!");
+
             TryValidateModel(result.bookDtoForUpdate);
             
             if(!ModelState.IsValid)
+            {
+                Console.WriteLine($"❌ ModelState HATALI: {ModelState}");
                 return UnprocessableEntity(ModelState);
+            }
+            
+            _manager.BookService.SaveChangesForPatch(result.bookDtoForUpdate ,result.book);
 
             return NoContent(); //204   
         }

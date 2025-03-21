@@ -21,8 +21,14 @@ namespace Repositories.Efcore
 
         public void Save()
         {
-            _context.SaveChanges();
+            if (_context.ChangeTracker.HasChanges())
+            {
+                _context.SaveChanges(); 
+            }
+            else
+            {
+                Console.WriteLine("Save() metodunda bir değişiklik yok.");
+            }
         }
-
     }
 }

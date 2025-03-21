@@ -4001,3 +4001,960 @@ SELECT ROW_COUNT();
 2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" stopped.
 2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" sending FIN because: "The Socket transport's send loop completed gracefully."
 2025-03-21 13:30:33.5021 DEBUG Hosting stopped
+2025-03-21 14:21:59.8478 DEBUG Application starting...
+2025-03-21 14:22:00.1215 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-21 14:22:00.2133 DEBUG Hosting starting
+2025-03-21 14:22:00.2842 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-21 14:22:00.3181 INFO Now listening on: https://localhost:7064
+2025-03-21 14:22:00.3181 INFO Now listening on: http://localhost:5110
+2025-03-21 14:22:00.3181 DEBUG Loaded hosting startup assembly WebApi
+2025-03-21 14:22:00.3181 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-21 14:22:00.3181 INFO Application started. Press Ctrl+C to shut down.
+2025-03-21 14:22:00.3181 INFO Hosting environment: Development
+2025-03-21 14:22:00.3181 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-21 14:22:00.3181 DEBUG Hosting started
+2025-03-21 14:22:06.9354 DEBUG Connection id "0HNB8DAEISDP4" received FIN.
+2025-03-21 14:22:06.9421 DEBUG Connection id "0HNB8DAEISDP4" accepted.
+2025-03-21 14:22:06.9421 DEBUG Connection id "0HNB8DAEISDP4" started.
+2025-03-21 14:22:06.9421 DEBUG Connection id "0HNB8DAEISDP5" accepted.
+2025-03-21 14:22:06.9421 DEBUG Connection id "0HNB8DAEISDP5" started.
+2025-03-21 14:22:06.9585 DEBUG Failed to authenticate HTTPS connection.
+2025-03-21 14:22:06.9585 DEBUG Connection id "0HNB8DAEISDP4" stopped.
+2025-03-21 14:22:06.9585 DEBUG Connection id "0HNB8DAEISDP4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 14:22:06.9890 DEBUG Connection 0HNB8DAEISDP5 established using the following protocol: Tls13
+2025-03-21 14:22:07.0312 INFO Request starting HTTP/1.1 GET https://localhost:7064/api/books - -
+2025-03-21 14:22:07.0312 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-21 14:22:07.0653 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 14:22:07.0653 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 14:22:07.0653 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-21 14:22:07.1061 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:07.1061 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-21 14:22:07.1328 INFO Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooksAsync() on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:07.1328 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:07.1328 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:07.1328 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:07.1328 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:07.1328 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:07.1328 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:07.4125 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-21 14:22:07.6131 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:08.1212 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:22:08.1759 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .AsNoTracking()
+    .OrderBy(b => b.Id)'
+2025-03-21 14:22:08.3720 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Book>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+        SELECT b.Id, b.Price, b.Title
+        FROM Books AS b
+        ORDER BY b.Id ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+    Repositories.Efcore.RepositoryContext, 
+    False, 
+    False, 
+    True
+)'
+2025-03-21 14:22:08.4062 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:08.4125 DEBUG Created DbCommand for 'ExecuteReader' (5ms).
+2025-03-21 14:22:08.4125 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:08.4648 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:08.4718 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+2025-03-21 14:22:08.5117 INFO Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+2025-03-21 14:22:08.5328 DEBUG A data reader was disposed.
+2025-03-21 14:22:08.5328 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:08.5328 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:08.5575 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:22:08.5575 DEBUG No information found on request to perform content negotiation.
+2025-03-21 14:22:08.5575 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-03-21 14:22:08.5575 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2025-03-21 14:22:08.5575 DEBUG Selected output formatter 'WebApi.Utilities.Formatters.CsvOutputFormatter' and content type 'text/csv' to write the response.
+2025-03-21 14:22:08.5575 INFO Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.BookDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-21 14:22:08.5676 INFO Executed action Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation) in 1431.1801ms
+2025-03-21 14:22:08.5676 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-21 14:22:08.5676 DEBUG Connection id "0HNB8DAEISDP5" completed keep alive response.
+2025-03-21 14:22:08.5676 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:22:08.5676 DEBUG Connection id "0HNB8DAEISDP5" received FIN.
+2025-03-21 14:22:08.5676 DEBUG Connection id "0HNB8DAEISDP5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 14:22:08.5676 DEBUG Connection id "0HNB8DAEISDP5" disconnecting.
+2025-03-21 14:22:08.5676 INFO Request finished HTTP/1.1 GET https://localhost:7064/api/books - - - 200 - text/csv;+charset=utf-8 1546.3356ms
+2025-03-21 14:22:08.5800 DEBUG Connection id "0HNB8DAEISDP5" stopped.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP6" accepted.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP6" started.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP6" received FIN.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP7" accepted.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP7" started.
+2025-03-21 14:22:17.2519 DEBUG Failed to authenticate HTTPS connection.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP6" stopped.
+2025-03-21 14:22:17.2519 DEBUG Connection id "0HNB8DAEISDP6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 14:22:17.2519 DEBUG Connection 0HNB8DAEISDP7 established using the following protocol: Tls13
+2025-03-21 14:22:17.2519 INFO Request starting HTTP/1.1 GET https://localhost:7064/api/books/3 - -
+2025-03-21 14:22:17.2519 DEBUG 1 candidate(s) found for the request path '/api/books/3'
+2025-03-21 14:22:17.2519 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/3'
+2025-03-21 14:22:17.2519 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:17.2519 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:17.2519 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:17.2744 INFO Route matched with {action = "GetOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOneBookAsync(Int32) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:17.2744 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:17.2744 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:17.2744 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:17.2744 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:17.2744 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:17.2744 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:17.2744 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:17.2833 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:17.2833 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:22:17.2833 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:17.2833 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:17.2833 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:17.2833 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:17.3487 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:22:17.3487 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .Where(b => b.Id.Equals(__id_0))
+    .AsNoTracking()
+    .SingleOrDefault()'
+2025-03-21 14:22:17.4351 DEBUG Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Book>(
+    asyncEnumerable: new SingleQueryingEnumerable<Book>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+            SELECT TOP(2) b.Id, b.Price, b.Title
+            FROM Books AS b
+            WHERE b.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+        Repositories.Efcore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-03-21 14:22:17.4461 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:17.4461 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:22:17.4671 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:17.4705 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:17.4705 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:17.5077 INFO Executed DbCommand (37ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:17.5077 DEBUG A data reader was disposed.
+2025-03-21 14:22:17.5077 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:17.5077 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:17.5077 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:22:17.5077 DEBUG Attempting to select an output formatter based on Accept header 'application/xml'.
+2025-03-21 14:22:17.5209 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 14:22:17.5209 INFO Executing OkObjectResult, writing value of type 'Entities.DataTransferObjects.BookDto'.
+2025-03-21 14:22:17.5506 INFO Executed action Presentation.Controllers.BooksController.GetOneBookAsync (Presentation) in 275.9335ms
+2025-03-21 14:22:17.5506 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:17.5506 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:22:17.5506 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:22:17.5506 INFO Request finished HTTP/1.1 GET https://localhost:7064/api/books/3 - - - 200 198 application/xml;+charset=utf-8 294.9578ms
+2025-03-21 14:22:25.3382 INFO Request starting HTTP/1.1 GET https://localhost:7064/api/books/10000 - -
+2025-03-21 14:22:25.3382 DEBUG 1 candidate(s) found for the request path '/api/books/10000'
+2025-03-21 14:22:25.3382 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/10000'
+2025-03-21 14:22:25.3382 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:25.3382 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:25.3382 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:25.3382 INFO Route matched with {action = "GetOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetOneBookAsync(Int32) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:25.3382 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:25.3382 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:25.3382 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:25.3382 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:25.3382 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:25.3382 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:25.3451 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:25.3451 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:25.3451 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:22:25.3451 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:25.3451 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:25.3451 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:25.3451 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:25.3451 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:22:25.3619 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:25.3619 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:22:25.3619 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:25.3619 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:25.3619 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:25.3619 INFO Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:25.3619 DEBUG A data reader was disposed.
+2025-03-21 14:22:25.3619 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:25.3619 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:25.3619 INFO Executed action Presentation.Controllers.BooksController.GetOneBookAsync (Presentation) in 26.1353ms
+2025-03-21 14:22:25.3619 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetOneBookAsync (Presentation)'
+2025-03-21 14:22:25.3619 ERROR An unhandled exception has occurred while executing the request.
+2025-03-21 14:22:25.3619 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-21 14:22:25.3884 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:22:25.3884 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:22:25.3884 INFO Request finished HTTP/1.1 GET https://localhost:7064/api/books/10000 - - - 404 - application/json 50.4094ms
+2025-03-21 14:22:33.5695 INFO Request starting HTTP/1.1 DELETE https://localhost:7064/api/books/3 - -
+2025-03-21 14:22:33.5695 DEBUG 1 candidate(s) found for the request path '/api/books/3'
+2025-03-21 14:22:33.5695 DEBUG Endpoint 'Presentation.Controllers.BooksController.DeleteOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/3'
+2025-03-21 14:22:33.5695 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.DeleteOneBookAsync (Presentation)'
+2025-03-21 14:22:33.5695 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:33.5695 INFO Executing endpoint 'Presentation.Controllers.BooksController.DeleteOneBookAsync (Presentation)'
+2025-03-21 14:22:33.5695 INFO Route matched with {action = "DeleteOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteOneBookAsync(Int32) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:33.5695 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:33.5695 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:33.5695 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:33.5695 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:33.5695 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:33.5695 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:33.5695 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:33.5695 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:33.5695 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:22:33.5695 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:33.5695 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:33.5695 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:22:33.5695 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:22:33.5786 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:22:33.5786 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:33.5786 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:22:33.5786 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.5786 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.5786 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:33.5786 INFO Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:22:33.5786 DEBUG A data reader was disposed.
+2025-03-21 14:22:33.5786 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.5786 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.6241 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:33.6297 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:33.6297 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:33.6450 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:22:33.6450 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:33.6450 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:33.6450 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:22:33.6663 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.6663 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.6663 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:22:33.6799 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:22:33.7297 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:33.7297 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:22:33.7297 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Books`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2025-03-21 14:22:33.7297 INFO Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM `Books`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2025-03-21 14:22:33.7378 DEBUG A data reader was disposed.
+2025-03-21 14:22:33.7378 DEBUG Committing transaction.
+2025-03-21 14:22:33.7502 DEBUG Committed transaction.
+2025-03-21 14:22:33.7502 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.7502 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:33.7502 DEBUG Disposing transaction.
+2025-03-21 14:22:33.7666 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:33.7666 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:22:33.7666 INFO Executing StatusCodeResult, setting HTTP status code 204
+2025-03-21 14:22:33.7666 INFO Executed action Presentation.Controllers.BooksController.DeleteOneBookAsync (Presentation) in 196.9881ms
+2025-03-21 14:22:33.7666 INFO Executed endpoint 'Presentation.Controllers.BooksController.DeleteOneBookAsync (Presentation)'
+2025-03-21 14:22:33.7666 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:22:33.7666 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:22:33.7666 INFO Request finished HTTP/1.1 DELETE https://localhost:7064/api/books/3 - - - 204 - - 203.1929ms
+2025-03-21 14:22:37.8516 INFO Request starting HTTP/1.1 POST https://localhost:7064/api/books/ application/json 50
+2025-03-21 14:22:37.8516 DEBUG 1 candidate(s) found for the request path '/api/books/'
+2025-03-21 14:22:37.8516 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books/'
+2025-03-21 14:22:37.8516 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:37.8516 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:37.8516 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:37.8516 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:37.8516 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:37.8516 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:37.8516 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:37.8516 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:37.8516 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:37.8516 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:37.8516 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:37.8516 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 14:22:37.8516 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 14:22:37.8516 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:37.8516 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:37.8516 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:37.8636 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000005": started reading request body.
+2025-03-21 14:22:37.8636 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000005": done reading request body.
+2025-03-21 14:22:37.9663 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:37.9663 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:37.9663 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 14:22:37.9741 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:37.9741 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:22:37.9741 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 14:22:37.9741 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 14:22:37.9741 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 14:22:37.9910 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 134.9917ms
+2025-03-21 14:22:37.9910 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:37.9910 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:22:37.9910 INFO Request finished HTTP/1.1 POST https://localhost:7064/api/books/ application/json 50 - 422 132 application/xml;+charset=utf-8 139.5891ms
+2025-03-21 14:22:54.7325 INFO Request starting HTTP/1.1 POST https://localhost:7064/api/books/ application/json 57
+2025-03-21 14:22:54.7325 DEBUG 1 candidate(s) found for the request path '/api/books/'
+2025-03-21 14:22:54.7325 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books/'
+2025-03-21 14:22:54.7325 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:54.7325 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:22:54.7325 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:54.7325 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:22:54.7325 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:22:54.7325 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:22:54.7325 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:22:54.7325 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:22:54.7325 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:22:54.7325 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:54.7325 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:22:54.7325 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 14:22:54.7325 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 14:22:54.7325 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:54.7325 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:54.7352 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:22:54.7352 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000006": started reading request body.
+2025-03-21 14:22:54.7352 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000006": done reading request body.
+2025-03-21 14:22:54.7352 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:54.7352 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:54.7352 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 14:22:54.7352 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 14:22:54.7352 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:22:54.7523 DEBUG '"RepositoryContext"' generated a temporary value for the property '"Id"."Book"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:54.7671 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:54.7671 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:54.7671 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:22:54.7671 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:54.7671 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:22:54.7671 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:22:54.7671 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:54.7671 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:54.7671 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:22:54.7671 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:22:54.7671 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:22:54.7671 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:22:54.7671 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 14:22:54.7833 INFO Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 14:22:54.8014 DEBUG The foreign key property 'Book.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-21 14:22:54.8014 DEBUG A data reader was disposed.
+2025-03-21 14:22:54.8014 DEBUG Committing transaction.
+2025-03-21 14:22:54.8157 DEBUG Committed transaction.
+2025-03-21 14:22:54.8157 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:54.8157 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:22:54.8157 DEBUG Disposing transaction.
+2025-03-21 14:22:54.8157 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:22:54.8157 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:22:54.8157 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:22:54.8157 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 14:22:54.8157 DEBUG Selected output formatter 'WebApi.Utilities.Formatters.CsvOutputFormatter' and content type 'text/csv' to write the response.
+2025-03-21 14:22:54.8157 INFO Executing ObjectResult, writing value of type 'Entities.DataTransferObjects.BookDto'.
+2025-03-21 14:22:54.8157 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 86.4513ms
+2025-03-21 14:22:54.8157 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 14:22:54.8157 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:22:54.8157 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:22:54.8157 INFO Request finished HTTP/1.1 POST https://localhost:7064/api/books/ application/json 57 - 201 - text/csv;+charset=utf-8 87.6649ms
+2025-03-21 14:23:30.1350 INFO Request starting HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 71
+2025-03-21 14:23:30.1350 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:23:30.1350 DEBUG Endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:23:30.1350 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:30.1350 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:23:30.1350 INFO Executing endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:30.1350 INFO Route matched with {action = "UpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOneBookAsync(Int32, Entities.DataTransferObjects.BookDtoForUpdate) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:23:30.1350 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:23:30.1350 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:23:30.1350 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:23:30.1350 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:23:30.1350 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:23:30.1350 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:30.1350 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:30.1350 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:30.1350 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:23:30.1350 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:30.1350 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:30.1350 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:30.1350 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:30.1350 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:30.1350 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' using the name '' in request data ...
+2025-03-21 14:23:30.1350 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:30.1350 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:30.1350 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:30.1350 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000007": started reading request body.
+2025-03-21 14:23:30.1350 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000007": done reading request body.
+2025-03-21 14:23:30.1429 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:30.1429 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:30.1429 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:30.1429 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:30.1429 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:23:30.1429 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:23:30.1429 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:23:30.1429 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:23:30.1429 INFO Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:23:30.1429 DEBUG A data reader was disposed.
+2025-03-21 14:23:30.1429 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:23:30.1429 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:30.1429 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:23:30.1429 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:30.1429 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:30.1429 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:23:30.1429 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1429 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:23:30.1429 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:23:30.1429 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:23:30.1429 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:23:30.1429 DEBUG Executing DbCommand [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Price` = @p0, `Title` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+2025-03-21 14:23:30.1429 INFO Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Price` = @p0, `Title` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+2025-03-21 14:23:30.1429 DEBUG A data reader was disposed.
+2025-03-21 14:23:30.1429 DEBUG Committing transaction.
+2025-03-21 14:23:30.1593 DEBUG Committed transaction.
+2025-03-21 14:23:30.1593 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1593 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:30.1593 DEBUG Disposing transaction.
+2025-03-21 14:23:30.1593 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:23:30.1593 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:23:30.1593 INFO Executing StatusCodeResult, setting HTTP status code 204
+2025-03-21 14:23:30.1593 INFO Executed action Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation) in 19.869ms
+2025-03-21 14:23:30.1593 INFO Executed endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:30.1593 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:23:30.1593 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:23:30.1593 INFO Request finished HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 71 - 204 - - 24.7012ms
+2025-03-21 14:23:37.4194 INFO Request starting HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 71
+2025-03-21 14:23:37.4194 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:23:37.4194 DEBUG Endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:23:37.4194 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:37.4194 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:23:37.4194 INFO Executing endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:37.4194 INFO Route matched with {action = "UpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOneBookAsync(Int32, Entities.DataTransferObjects.BookDtoForUpdate) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:23:37.4194 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:23:37.4194 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:23:37.4194 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:23:37.4194 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:23:37.4194 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:23:37.4194 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:37.4194 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:37.4194 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:37.4194 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:23:37.4194 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:37.4194 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:37.4194 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:37.4194 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:37.4194 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:37.4194 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' using the name '' in request data ...
+2025-03-21 14:23:37.4194 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:37.4194 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:37.4194 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:37.4194 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000008": started reading request body.
+2025-03-21 14:23:37.4194 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000008": done reading request body.
+2025-03-21 14:23:37.4194 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:37.4194 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:37.4194 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:37.4194 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:37.4223 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:23:37.4223 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:23:37.4223 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:23:37.4223 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:23:37.4223 INFO Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+WHERE `b`.`Id` = @__id_0
+LIMIT 2
+2025-03-21 14:23:37.4223 DEBUG A data reader was disposed.
+2025-03-21 14:23:37.4223 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:23:37.4223 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:37.4223 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:23:37.4223 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:37.4223 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:23:37.4223 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:23:37.4223 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:23:37.4223 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:23:37.4223 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:23:37.4223 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:23:37.4223 DEBUG Executing DbCommand [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Price` = @p0, `Title` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+2025-03-21 14:23:37.4223 INFO Executed DbCommand (1ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Price` = @p0, `Title` = @p1
+WHERE `Id` = @p2;
+SELECT ROW_COUNT();
+2025-03-21 14:23:37.4223 DEBUG A data reader was disposed.
+2025-03-21 14:23:37.4223 DEBUG Committing transaction.
+2025-03-21 14:23:37.4223 DEBUG Committed transaction.
+2025-03-21 14:23:37.4223 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:23:37.4223 DEBUG Disposing transaction.
+2025-03-21 14:23:37.4223 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:23:37.4223 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:23:37.4223 INFO Executing StatusCodeResult, setting HTTP status code 204
+2025-03-21 14:23:37.4223 INFO Executed action Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation) in 7.0314ms
+2025-03-21 14:23:37.4223 INFO Executed endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:37.4223 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:23:37.4223 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:23:37.4223 INFO Request finished HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 71 - 204 - - 8.0073ms
+2025-03-21 14:23:50.0576 INFO Request starting HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 50
+2025-03-21 14:23:50.0576 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:23:50.0576 DEBUG Endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:23:50.0576 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:50.0576 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:23:50.0576 INFO Executing endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:50.0576 INFO Route matched with {action = "UpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOneBookAsync(Int32, Entities.DataTransferObjects.BookDtoForUpdate) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:23:50.0576 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:23:50.0576 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:23:50.0576 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:23:50.0576 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:23:50.0576 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:23:50.0576 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:50.0576 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:23:50.0576 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:50.0576 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:23:50.0576 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:50.0576 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:50.0576 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:23:50.0576 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:23:50.0576 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:50.0576 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' using the name '' in request data ...
+2025-03-21 14:23:50.0576 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:50.0576 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:50.0576 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:23:50.0576 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000009": started reading request body.
+2025-03-21 14:23:50.0576 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:00000009": done reading request body.
+2025-03-21 14:23:50.0576 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:50.0576 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:50.0576 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 14:23:50.0576 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 14:23:50.0576 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:23:50.0576 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 14:23:50.0576 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 14:23:50.0576 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 14:23:50.0576 INFO Executed action Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation) in 1.3024ms
+2025-03-21 14:23:50.0576 INFO Executed endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 14:23:50.0576 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:23:50.0576 INFO Request finished HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 50 - 422 132 application/xml;+charset=utf-8 2.1368ms
+2025-03-21 14:24:17.9676 INFO Request starting HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 69
+2025-03-21 14:24:17.9676 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:24:17.9676 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:24:17.9676 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:17.9676 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:24:17.9676 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:17.9713 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:24:17.9713 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:24:17.9713 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:24:17.9713 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:24:17.9713 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:24:17.9713 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:24:17.9713 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:24:17.9713 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:24:17.9713 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:24:17.9713 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:24:17.9713 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:17.9713 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:17.9713 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:24:17.9713 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:17.9713 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:24:17.9713 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:24:17.9713 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:17.9713 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:17.9713 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:17.9713 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000A": started reading request body.
+2025-03-21 14:24:17.9713 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000A": done reading request body.
+2025-03-21 14:24:17.9713 DEBUG JSON input formatter threw an exception.
+2025-03-21 14:24:17.9713 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:17.9713 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:17.9713 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:24:17.9713 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:17.9713 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:24:17.9845 DEBUG Attempting to select an output formatter based on Accept header '*/*' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types.
+2025-03-21 14:24:17.9845 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-21 14:24:17.9845 INFO Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-03-21 14:24:18.0351 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 63.6727ms
+2025-03-21 14:24:18.0351 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:18.0351 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:24:18.0351 INFO Request finished HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 69 - 400 163 application/problem+json;+charset=utf-8 67.6663ms
+2025-03-21 14:24:54.1303 INFO Request starting HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 69
+2025-03-21 14:24:54.1303 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:24:54.1303 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:24:54.1303 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:54.1303 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:24:54.1303 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:54.1303 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:24:54.1303 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:24:54.1303 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:24:54.1303 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:24:54.1303 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:24:54.1303 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:24:54.1303 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:24:54.1303 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:24:54.1303 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:24:54.1303 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:24:54.1303 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:54.1303 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:54.1303 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:24:54.1303 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:24:54.1303 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:24:54.1303 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:24:54.1303 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:54.1303 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:54.1303 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:24:54.1303 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000B": started reading request body.
+2025-03-21 14:24:54.1303 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000B": done reading request body.
+2025-03-21 14:24:54.1303 DEBUG JSON input formatter threw an exception.
+2025-03-21 14:24:54.1303 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:54.1303 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:54.1303 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:24:54.1303 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:24:54.1303 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 14:24:54.1303 DEBUG Attempting to select an output formatter based on Accept header '*/*' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types.
+2025-03-21 14:24:54.1303 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-03-21 14:24:54.1303 INFO Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-03-21 14:24:54.1303 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 2.7881ms
+2025-03-21 14:24:54.1303 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:24:54.1303 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:24:54.1303 INFO Request finished HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 69 - 400 163 application/problem+json;+charset=utf-8 4.1556ms
+2025-03-21 14:26:36.1851 INFO Request starting HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 95
+2025-03-21 14:26:36.1851 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 14:26:36.1851 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 14:26:36.1851 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:26:36.1851 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:26:36.1851 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:26:36.1851 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:26:36.1851 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:26:36.1851 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:26:36.1851 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:26:36.1851 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:26:36.1851 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:26:36.1851 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:26:36.1851 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:26:36.1851 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:26:36.1851 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:26:36.1851 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:26:36.1851 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:26:36.1851 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:26:36.1851 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:26:36.1851 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:26:36.1851 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:26:36.1851 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:26:36.1851 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:26:36.1851 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:26:36.1851 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000C": started reading request body.
+2025-03-21 14:26:36.1851 DEBUG Connection id "0HNB8DAEISDP7", Request id "0HNB8DAEISDP7:0000000C": done reading request body.
+2025-03-21 14:26:36.1986 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:26:36.1986 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:26:36.1986 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:26:36.1986 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:26:36.1986 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:26:36.1986 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .SingleOrDefault()'
+2025-03-21 14:26:36.1986 DEBUG Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Book>(
+    asyncEnumerable: new SingleQueryingEnumerable<Book>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+            SELECT TOP(2) b.Id, b.Price, b.Title
+            FROM Books AS b), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+        Repositories.Efcore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-03-21 14:26:36.1986 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:26:36.1986 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:26:36.1986 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:26:36.1986 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:26:36.1986 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 2
+2025-03-21 14:26:36.2029 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 2
+2025-03-21 14:26:36.2029 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:26:36.2029 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:26:36.2029 DEBUG A data reader was disposed.
+2025-03-21 14:26:36.2029 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:26:36.2029 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:26:36.2029 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 21.8973ms
+2025-03-21 14:26:36.2029 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:26:36.2029 ERROR An unhandled exception has occurred while executing the request.
+2025-03-21 14:26:36.2029 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-21 14:26:36.2029 DEBUG Connection id "0HNB8DAEISDP7" completed keep alive response.
+2025-03-21 14:26:36.2029 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:26:36.2029 INFO Request finished HTTP/1.1 PATCH https://localhost:7064/api/books/2 application/json 95 - 500 - application/json 22.9033ms
+2025-03-21 14:28:47.2299 DEBUG Connection id "0HNB8DAEISDP7" disconnecting.
+2025-03-21 14:28:47.2299 DEBUG Connection id "0HNB8DAEISDP7" stopped.
+2025-03-21 14:28:47.2299 DEBUG Connection id "0HNB8DAEISDP7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 14:29:01.9444 INFO Application is shutting down...
+2025-03-21 14:29:01.9444 DEBUG Hosting stopping
+2025-03-21 14:29:01.9444 DEBUG Hosting stopped
+2025-03-21 14:50:12.0474 DEBUG Application starting...
+2025-03-21 14:50:12.2135 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-21 14:50:12.2518 DEBUG Hosting starting
+2025-03-21 14:50:12.3156 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-21 14:50:12.3448 INFO Now listening on: https://localhost:7064
+2025-03-21 14:50:12.3448 INFO Now listening on: http://localhost:5110
+2025-03-21 14:50:12.3448 DEBUG Loaded hosting startup assembly WebApi
+2025-03-21 14:50:12.3448 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-21 14:50:12.3448 INFO Application started. Press Ctrl+C to shut down.
+2025-03-21 14:50:12.3448 INFO Hosting environment: Development
+2025-03-21 14:50:12.3448 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-21 14:50:12.3448 DEBUG Hosting started
+2025-03-21 14:50:32.6094 DEBUG Connection id "0HNB8DQATEEQE" accepted.
+2025-03-21 14:50:32.6112 DEBUG Connection id "0HNB8DQATEEQE" started.
+2025-03-21 14:50:32.6460 DEBUG Connection 0HNB8DQATEEQE established using the following protocol: Tls13
+2025-03-21 14:50:32.6729 INFO Request starting HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 75
+2025-03-21 14:50:32.6729 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-21 14:50:32.6932 DEBUG 1 candidate(s) found for the request path '/api/books/1'
+2025-03-21 14:50:32.6932 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/1'
+2025-03-21 14:50:32.6932 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:50:32.7041 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:50:32.7041 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:50:32.7266 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:50:32.7266 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:50:32.7266 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:50:32.7266 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:50:32.7266 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:50:32.7266 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:50:32.7266 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:50:32.8928 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-21 14:50:32.9617 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:50:32.9617 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:50:32.9617 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:50:32.9617 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:50:32.9617 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:50:32.9617 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:50:32.9617 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:50:32.9617 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:50:32.9617 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:50:32.9617 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:50:32.9617 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:50:32.9617 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:50:32.9713 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000001": started reading request body.
+2025-03-21 14:50:32.9713 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000001": done reading request body.
+2025-03-21 14:50:33.0422 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:50:33.0422 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:50:33.0422 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:50:33.0422 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:50:33.3666 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:50:33.3970 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .SingleOrDefault()'
+2025-03-21 14:50:33.4912 DEBUG Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Book>(
+    asyncEnumerable: new SingleQueryingEnumerable<Book>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+            SELECT TOP(2) b.Id, b.Price, b.Title
+            FROM Books AS b), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+        Repositories.Efcore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-03-21 14:50:33.5109 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:50:33.5109 DEBUG Created DbCommand for 'ExecuteReader' (2ms).
+2025-03-21 14:50:33.5176 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:50:33.5390 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:50:33.5390 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 2
+2025-03-21 14:50:33.5662 INFO Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 2
+2025-03-21 14:50:33.5662 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:50:33.5899 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:50:33.5985 DEBUG A data reader was disposed.
+2025-03-21 14:50:33.5985 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:50:33.5985 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:50:33.5985 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 875.6773ms
+2025-03-21 14:50:33.5985 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:50:33.5985 ERROR An unhandled exception has occurred while executing the request.
+2025-03-21 14:50:33.5985 ERROR Something went wrong: Microsoft.AspNetCore.Diagnostics.ExceptionHandlerFeature
+2025-03-21 14:50:33.6216 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:50:33.6216 INFO Request finished HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 75 - 500 - application/json 951.2877ms
+2025-03-21 14:51:33.6794 INFO Request starting HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 75
+2025-03-21 14:51:33.6794 DEBUG 1 candidate(s) found for the request path '/api/books/1'
+2025-03-21 14:51:33.6794 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/1'
+2025-03-21 14:51:33.6794 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:51:33.6794 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:51:33.6794 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:51:33.6794 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:51:33.6794 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:51:33.6794 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:51:33.6794 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:51:33.6794 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:51:33.6794 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:51:33.6794 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:51:33.6794 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:51:33.6794 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:51:33.6794 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:51:33.6794 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:51:33.6794 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:51:33.6794 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:51:33.6794 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:51:33.6794 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:51:33.6794 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:51:33.6794 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:51:33.6794 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:51:33.6794 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:51:33.6794 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000003": started reading request body.
+2025-03-21 14:51:33.6794 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000003": done reading request body.
+2025-03-21 14:51:33.6794 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:51:33.6794 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:51:33.6794 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:51:33.6794 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:51:33.7147 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:51:33.7147 DEBUG Compiling query expression: 
+'DbSet<Book>()
+    .FirstOrDefault()'
+2025-03-21 14:51:33.7147 WARN The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-03-21 14:51:33.7147 DEBUG Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Book>(
+    asyncEnumerable: new SingleQueryingEnumerable<Book>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Book.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Book.Price (decimal) Required, 1], [Property: Book.Title (string) Required, 2] }
+            SELECT TOP(1) b.Id, b.Price, b.Title
+            FROM Books AS b), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Book>, 
+        Repositories.Efcore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-03-21 14:51:33.7147 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:51:33.7147 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:51:33.7147 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7210 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7210 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 1
+2025-03-21 14:51:33.7210 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 1
+2025-03-21 14:51:33.7210 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:51:33.7210 DEBUG A data reader was disposed.
+2025-03-21 14:51:33.7210 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7210 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7380 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:51:33.7380 DEBUG The unchanged property 'Book.Title' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-21 14:51:33.7502 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:51:33.7502 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:51:33.7502 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:51:33.7502 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:51:33.7502 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:51:33.7502 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7502 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.7502 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:51:33.7710 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:51:33.7944 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:51:33.7944 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:51:33.8046 DEBUG Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Title` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-03-21 14:51:33.8184 INFO Executed DbCommand (15ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Title` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-03-21 14:51:33.8184 DEBUG A data reader was disposed.
+2025-03-21 14:51:33.8184 DEBUG Committing transaction.
+2025-03-21 14:51:33.8311 DEBUG Committed transaction.
+2025-03-21 14:51:33.8311 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.8311 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:51:33.8311 DEBUG Disposing transaction.
+2025-03-21 14:51:33.8311 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:51:33.8311 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:51:33.8311 INFO Executing StatusCodeResult, setting HTTP status code 204
+2025-03-21 14:51:33.8311 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 157.5983ms
+2025-03-21 14:51:33.8311 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:51:33.8311 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:51:33.8311 INFO Request finished HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 75 - 204 - - 161.2593ms
+2025-03-21 14:52:03.1316 INFO Request starting HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 74
+2025-03-21 14:52:03.1316 DEBUG 1 candidate(s) found for the request path '/api/books/1'
+2025-03-21 14:52:03.1316 DEBUG Endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/1'
+2025-03-21 14:52:03.1316 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:52:03.1316 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 14:52:03.1316 INFO Executing endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:52:03.1316 INFO Route matched with {action = "PartiallyUpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PartiallyUpdateOneBookAsync(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 14:52:03.1316 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 14:52:03.1316 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 14:52:03.1316 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2025-03-21 14:52:03.1316 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 14:52:03.1316 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-03-21 14:52:03.1316 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)

@@ -7,6 +7,7 @@ using AutoMapper;
 using Entities.DataTransferObjects;
 using System.Transactions;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 
 namespace Services
@@ -24,106 +25,44 @@ namespace Services
             _logger = logger;
             _mapper = mapper;
         }
-
-        public BookDto CreateOneBook(BookDtoForInsertion bookDto)
+        public async Task<IEnumerable<BookDto>> GetAllBooksAsync(bool trackChanges)
         {
-            var entity = _mapper.Map<Book>(bookDto);
-            _manager.Book.CreateOneBook(entity);
-            _manager.Save();
-            return _mapper.Map<BookDto>(entity);
-        }
-
-        public void DeleteOneBook(int id, bool trackChanges)
-        {
-
-            var entity = _manager.Book.GetOneBookById(id, trackChanges);
-            if (entity is null)
-            {
-                throw new BookNotFoundException(id);
-            }
-            _manager.Book.DeleteOneBook(entity);
-            _manager.Save();
-        }
-
-        public IEnumerable<BookDto> GetAllBooks(bool trackChanges)
-        {
-            var books = _manager.Book.GetAllBooks(trackChanges);
+            var books = await _manager.Book.GetAllBooksAsync(trackChanges);
             return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 
-        public BookDto GetOneBookById(int id, bool trackChanges)
+        public async Task<BookDto> GetOneBookByIdAsync(int id, bool trackChanges)
         {
-            var book = _manager.Book.GetOneBookById(id,trackChanges);
+            var book = await _manager.Book.GetOneBookByIdAsync(id,trackChanges);
             if(book is null)
                 throw new BookNotFoundException(id);
             return _mapper.Map<BookDto>(book);
         }
 
-        public (BookDtoForUpdate bookDtoForUpdate, Book book) GetOneBookForPatch(int id, bool trackChanges)
+        public async Task<BookDto> CreateOneBookAsync(BookDtoForInsertion bookDto)
         {
-            var book = _manager.Book.GetOneBookById(id , trackChanges);
-            
-            if (book is null)
+            var entity = _mapper.Map<Book>(bookDto);
+            _manager.Book.CreateOneBook(entity);
+            await _manager.SaveAsync();
+            return  _mapper.Map<BookDto>(entity);
+        }
+
+        public async Task DeleteOneBookAsync(int id, bool trackChanges)
+        {
+
+            var entity = await _manager.Book.GetOneBookByIdAsync(id, trackChanges);
+            if (entity is null)
+            {
                 throw new BookNotFoundException(id);
-            
-            var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
-            
-            return (bookDtoForUpdate,book);
+            }
+            _manager.Book.DeleteOneBook(entity);
+            await _manager.SaveAsync();
         }
 
-        public void SaveChangesForPatch(BookDtoForUpdate bookDtoForUpdate, Book book)
-        {
-            try
-            {
-                var initialBook = new Book
-                {
-                    Id = book.Id,
-                    Title = book.Title,
-                    Price = book.Price
-                };
-                Console.WriteLine($"{initialBook.Price},{initialBook.Title},{initialBook.Id}");
-                _mapper.Map(bookDtoForUpdate, book);
-                Console.WriteLine($"Yeni Book: {book.Price},{book.Title},{book.Id}");
-
-                // // Boş if else 
-                // if (initialBook.Title is not null)
-                // {
-                //     Console.WriteLine($"Yeni Title bookmanager: {book.Title}");
-                // }
-                // else if (initialBook.Price != 0)
-                // {
-                //     Console.WriteLine($"Yeni Price bookmanager: {book.Price}");
-                // }
-                // else if (initialBook.Id == 0)
-                // {
-                //     Console.WriteLine($"book with id not found");
-                // }
-                // else{
-                //     Console.WriteLine("çıkış");
-                // }
-                // ---------------------------- //
-                if (book.Title != initialBook.Title || book.Price != initialBook.Price) // Eğer book nesnesi değişmişse
-                    {
-                        _manager.Save();
-                        Console.WriteLine("✅ Veritabanına kaydedildi!");
-                    }
-                else
-                {
-                    Console.WriteLine("❌ Hiçbir değişiklik yok, veritabanına kaydedilmedi.");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"❌ Hata oluştu: {ex.Message}");
-                // Hata mesajını döndürebilirsin
-                throw;
-            }
-        }
-
-        public void UpdateOneBook(int id , BookDtoForUpdate bookDto , bool trackChanges )
+        public async Task UpdateOneBookAsync(int id , BookDtoForUpdate bookDto , bool trackChanges )
         {
             // Check entity
-            var entity = _manager.Book.GetOneBookById(id,trackChanges);
+            var entity = await _manager.Book.GetOneBookByIdAsync(id,trackChanges);
             
             if (entity is null)
                 throw new BookNotFoundException(id);
@@ -135,9 +74,55 @@ namespace Services
             entity = _mapper.Map<Book>(bookDto);
 
             _manager.Book.Update(entity);
-            _manager.Save();
-            Console.Write("KAydedildi looooooo!");
+            await _manager.SaveAsync();
             
         }
+        public async Task<(BookDtoForUpdate bookDtoForUpdate, Book book)> GetOneBookForPatchAsync(int id, bool trackChanges)
+        {
+            var book = await _manager.Book.GetOneBookByIdAsync(id , trackChanges);
+            
+            if (book is null)
+                throw new BookNotFoundException(id);
+            
+            var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
+            
+            return (bookDtoForUpdate,book);
+        }
+
+        public async Task SaveChangesForPatchAsync(BookDtoForUpdate bookDtoForUpdate, Book book)
+        {
+            try
+            {
+                var initialBook = new Book
+                {
+                    Id = book.Id,
+                    Title = book.Title,
+                    Price = book.Price
+                };
+
+                Console.WriteLine($"{initialBook.Price},{initialBook.Title},{initialBook.Id}");
+                _mapper.Map(bookDtoForUpdate, book);
+                Console.WriteLine($"Yeni Book: {book.Price},{book.Title},{book.Id}");
+
+                if (book.Title != initialBook.Title || book.Price != initialBook.Price) // Eğer book nesnesi değişmişse
+                    {
+                        await _manager.SaveAsync();
+                        Console.WriteLine("✅ Veritabanına kaydedildi!");
+                    }
+                else
+                {
+                    Console.WriteLine("❌ Hiçbir değişiklik yok, veritabanına kaydedilmedi.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Hata oluştu: {ex.Message}");
+                // Hata mesajını döndürebilirsin
+                throw;
+            }
+        }
+
+
     }
 }

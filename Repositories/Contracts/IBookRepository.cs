@@ -6,8 +6,8 @@ namespace Repositories.Contracts
     // Book nesnesi için IRepositoryBase de ki Crud işlemleri devralınmış oldu
     public interface IBookRepository : IRepositoryBase<Book>
     {
-            IQueryable<Book> GetAllBooks(bool trackChanges);
-            Book GetOneBookById(int id , bool trackChanges);
+            Task<IEnumerable<Book>>  GetAllBooksAsync(bool trackChanges);
+            Task<Book> GetOneBookByIdAsync(int id , bool trackChanges);
             void CreateOneBook(Book book);
 
             void DeleteOneBook(Book book);

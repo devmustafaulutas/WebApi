@@ -3977,3 +3977,27 @@ SELECT ROW_COUNT();
 2025-03-21 13:15:31.6410 INFO Request finished HTTP/2 PUT https://localhost:7064/api/books/1 application/json 48 - 204 - - 15.3014ms
 2025-03-21 13:17:43.1165 DEBUG Connection id "0HNB8C48Q39R4" is closing.
 2025-03-21 13:17:43.1165 DEBUG Connection id "0HNB8C48Q39R4" is closed. The last processed stream ID was 3.
+2025-03-21 13:17:43.1165 DEBUG Connection id "0HNB8C48Q39R4" stopped.
+2025-03-21 13:17:43.1165 DEBUG Connection id "0HNB8C48Q39R4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 13:29:43.6509 DEBUG Connection id "0HNB8C48Q39R5" accepted.
+2025-03-21 13:29:43.6509 DEBUG Connection id "0HNB8C48Q39R5" started.
+2025-03-21 13:29:43.6668 DEBUG Connection 0HNB8C48Q39R5 established using the following protocol: Tls13
+2025-03-21 13:29:43.6668 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 13:29:43.6668 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 13:29:43.6668 DEBUG Request did not match any endpoints
+2025-03-21 13:29:43.6668 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 13:29:43.6668 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 13:29:43.6668 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.6561ms
+2025-03-21 13:29:43.7099 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 13:29:43.7099 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.4147ms
+2025-03-21 13:29:43.9825 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 13:29:43.9825 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 13:29:43.9825 DEBUG Request did not match any endpoints
+2025-03-21 13:29:43.9869 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4458ms
+2025-03-21 13:30:33.5021 INFO Application is shutting down...
+2025-03-21 13:30:33.5021 DEBUG Hosting stopping
+2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" is closing.
+2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" is closed. The last processed stream ID was 5.
+2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" stopped.
+2025-03-21 13:30:33.5021 DEBUG Connection id "0HNB8C48Q39R5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 13:30:33.5021 DEBUG Hosting stopped

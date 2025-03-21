@@ -1,5 +1,6 @@
 using Entities.Exceptions;
 using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.Efcore.Config;
 
@@ -21,25 +22,13 @@ namespace Repositories.Efcore
 
         public void UpdateOneBook(Book book) => Update(book);
 
-        public IQueryable<Book> GetAllBooks(bool trackChanges) =>
-            FindAll(trackChanges)
-            .OrderBy(b => b.Id);
+        public async Task<IEnumerable<Book>> GetAllBooksAsync(bool trackChanges) =>
+            await FindAll(trackChanges)
+                .OrderBy(b => b.Id)
+                    .ToListAsync();
             
-        public Book GetOneBookById(int id, bool trackChanges)
-        {
-            var book = FindByCondition(b => b.Id == id, trackChanges).FirstOrDefault();
-            Console.WriteLine($"{book}");
-            if (book is null)
-            {
-                Console.WriteLine($"❌ Book with ID {id} not found.");
-                throw new BookNotFoundException(id); 
-            }
-
-            // Log atalım
-            Console.WriteLine($"✅ Kitap Bulundu: {book.Title} - {book.Price}");
-
-            return book;
-        }
-
+        public async Task<Book> GetOneBookByIdAsync(int id, bool trackChanges) =>
+            await FindByCondition(b => b.Id.Equals(id) , trackChanges)
+                .SingleOrDefaultAsync();
     }
 }

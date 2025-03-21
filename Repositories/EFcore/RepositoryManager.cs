@@ -19,11 +19,11 @@ namespace Repositories.Efcore
         // Bir class içinde başka bir class normal şartlarda newlenmez 
         public IBookRepository Book => _bookRepository.Value;
 
-        public void Save()
+        public async Task SaveAsync()
         {
             if (_context.ChangeTracker.HasChanges())
             {
-                _context.SaveChanges(); 
+               await _context.SaveChangesAsync(); 
             }
             else
             {

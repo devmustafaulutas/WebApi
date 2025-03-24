@@ -8,9 +8,8 @@ C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Reposito
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
-C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.sourcelink.json
-C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Reposito.787EC4B2.Up2Date
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.dll
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\refint\Repositories.dll
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.pdb
 C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+C:\Users\musta\Desktop\code\github\WebApi\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete

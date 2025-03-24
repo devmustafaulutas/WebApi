@@ -1,4 +1,4 @@
-
+using Entities.RequestFeatures;
 using Entities.Models;
 
 namespace Repositories.Contracts
@@ -6,7 +6,7 @@ namespace Repositories.Contracts
     // Book nesnesi için IRepositoryBase de ki Crud işlemleri devralınmış oldu
     public interface IBookRepository : IRepositoryBase<Book>
     {
-            Task<IEnumerable<Book>>  GetAllBooksAsync(bool trackChanges);
+            Task<IEnumerable<Book>>  GetAllBooksAsync( BookParameters bookParameters , bool trackChanges);
             Task<Book> GetOneBookByIdAsync(int id , bool trackChanges);
             void CreateOneBook(Book book);
 

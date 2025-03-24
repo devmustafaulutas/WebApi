@@ -1,5 +1,6 @@
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.Efcore.Config;
@@ -22,9 +23,12 @@ namespace Repositories.Efcore
 
         public void UpdateOneBook(Book book) => Update(book);
 
-        public async Task<IEnumerable<Book>> GetAllBooksAsync(bool trackChanges) =>
+        public async Task<IEnumerable<Book>> GetAllBooksAsync(BookParameters bookParameters ,
+            bool trackChanges) => 
             await FindAll(trackChanges)
                 .OrderBy(b => b.Id)
+                .Skip((bookParameters.PageNumber-1)*bookParameters.PageSize)
+                .Take(bookParameters.PageSize)
                     .ToListAsync();
             
         public async Task<Book> GetOneBookByIdAsync(int id, bool trackChanges) =>

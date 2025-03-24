@@ -1,11 +1,12 @@
 using Entities.DataTransferObjects;
 using Entities.Models;
 using Repositories;
+using Entities.RequestFeatures;
 namespace Services.Contracts
 {
     public interface IBookService
     {
-        Task<IEnumerable<BookDto>> GetAllBooksAsync(bool trackChanges);
+        Task<IEnumerable<BookDto>> GetAllBooksAsync(BookParameters bookParameters , bool trackChanges);
         Task<BookDto> GetOneBookByIdAsync(int id , bool trackChanges);
 
         Task<BookDto> CreateOneBookAsync(BookDtoForInsertion book);

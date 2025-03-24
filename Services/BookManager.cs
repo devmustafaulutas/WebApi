@@ -1,5 +1,6 @@
 using Services.Contracts;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Repositories.Contracts;
 using Microsoft.Extensions.Logging;
 using Entities.Exceptions;
@@ -25,9 +26,9 @@ namespace Services
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<IEnumerable<BookDto>> GetAllBooksAsync(bool trackChanges)
+        public async Task<IEnumerable<BookDto>> GetAllBooksAsync(BookParameters bookParameters , bool trackChanges)
         {
-            var books = await _manager.Book.GetAllBooksAsync(trackChanges);
+            var books = await _manager.Book.GetAllBooksAsync(bookParameters , trackChanges);
             return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RxHCwhWZJI0=",
+  "dgSpecHash": "h+2aRe+HsQ0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\musta\\Desktop\\code\\github\\WebApi\\webapi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\musta\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\musta\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

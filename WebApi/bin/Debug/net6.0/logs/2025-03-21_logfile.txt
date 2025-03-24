@@ -4958,3 +4958,973 @@ SELECT ROW_COUNT();
 2025-03-21 14:52:03.1316 DEBUG Execution plan of exception filters (in the following order): None
 2025-03-21 14:52:03.1316 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
 2025-03-21 14:52:03.1316 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:52:03.1316 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 14:52:03.1316 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:52:03.1316 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 14:52:03.1316 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:52:03.1316 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 14:52:03.1316 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 14:52:03.1316 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 14:52:03.1316 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:52:03.1316 DEBUG Attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' using the name '' in request data ...
+2025-03-21 14:52:03.1316 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 14:52:03.1316 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 14:52:03.1316 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 14:52:03.1316 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000005": started reading request body.
+2025-03-21 14:52:03.1316 DEBUG Connection id "0HNB8DQATEEQE", Request id "0HNB8DQATEEQE:00000005": done reading request body.
+2025-03-21 14:52:03.1316 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:52:03.1316 DEBUG Done attempting to bind parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:52:03.1316 DEBUG Attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]' ...
+2025-03-21 14:52:03.1316 DEBUG Done attempting to validate the bound parameter 'bookPatch' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[Entities.DataTransferObjects.BookDtoForUpdate]'.
+2025-03-21 14:52:03.1477 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 14:52:03.1477 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:52:03.1477 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:52:03.1477 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 1
+2025-03-21 14:52:03.1477 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+LIMIT 1
+2025-03-21 14:52:03.1477 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:52:03.1477 DEBUG A data reader was disposed.
+2025-03-21 14:52:03.1477 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:52:03.1477 DEBUG The unchanged property 'Book.Title' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-21 14:52:03.1477 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:52:03.1477 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:52:03.1477 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 14:52:03.1477 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 14:52:03.1477 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 14:52:03.1477 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1477 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 14:52:03.1477 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 14:52:03.1477 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 14:52:03.1477 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 14:52:03.1477 DEBUG Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Title` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-03-21 14:52:03.1477 INFO Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+UPDATE `Books` SET `Title` = @p0
+WHERE `Id` = @p1;
+SELECT ROW_COUNT();
+2025-03-21 14:52:03.1477 DEBUG A data reader was disposed.
+2025-03-21 14:52:03.1477 DEBUG Committing transaction.
+2025-03-21 14:52:03.1613 DEBUG Committed transaction.
+2025-03-21 14:52:03.1613 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1613 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 14:52:03.1613 DEBUG Disposing transaction.
+2025-03-21 14:52:03.1613 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 14:52:03.1613 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 14:52:03.1613 INFO Executing StatusCodeResult, setting HTTP status code 204
+2025-03-21 14:52:03.1613 INFO Executed action Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation) in 28.319ms
+2025-03-21 14:52:03.1613 INFO Executed endpoint 'Presentation.Controllers.BooksController.PartiallyUpdateOneBookAsync (Presentation)'
+2025-03-21 14:52:03.1613 DEBUG 'RepositoryContext' disposed.
+2025-03-21 14:52:03.1613 INFO Request finished HTTP/2 PATCH https://localhost:7064/api/books/1 application/json 74 - 204 - - 30.1238ms
+2025-03-21 14:54:14.7191 DEBUG Connection id "0HNB8DQATEEQE" is closing.
+2025-03-21 14:54:14.7191 DEBUG Connection id "0HNB8DQATEEQE" is closed. The last processed stream ID was 5.
+2025-03-21 14:54:14.7191 DEBUG Connection id "0HNB8DQATEEQE" received FIN.
+2025-03-21 14:54:14.7191 DEBUG Connection id "0HNB8DQATEEQE" stopped.
+2025-03-21 14:54:14.7191 DEBUG Connection id "0HNB8DQATEEQE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:02:42.6303 INFO Application is shutting down...
+2025-03-21 15:02:42.6303 DEBUG Hosting stopping
+2025-03-21 15:02:42.6303 DEBUG Hosting stopped
+2025-03-21 15:21:19.6679 DEBUG Application starting...
+2025-03-21 15:21:20.0057 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-21 15:21:20.1845 DEBUG Hosting starting
+2025-03-21 15:21:20.2745 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-21 15:21:20.3231 INFO Now listening on: https://localhost:7064
+2025-03-21 15:21:20.3231 INFO Now listening on: http://localhost:5110
+2025-03-21 15:21:20.3231 DEBUG Loaded hosting startup assembly WebApi
+2025-03-21 15:21:20.3231 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-21 15:21:20.3231 INFO Application started. Press Ctrl+C to shut down.
+2025-03-21 15:21:20.3231 INFO Hosting environment: Development
+2025-03-21 15:21:20.3231 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-21 15:21:20.3231 DEBUG Hosting started
+2025-03-21 15:26:42.6997 DEBUG Connection id "0HNB8EEHL1BNH" accepted.
+2025-03-21 15:26:42.6997 DEBUG Connection id "0HNB8EEHL1BNH" started.
+2025-03-21 15:26:42.7415 DEBUG Connection 0HNB8EEHL1BNH established using the following protocol: Tls13
+2025-03-21 15:26:42.7790 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:26:42.7893 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-21 15:26:42.8084 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:26:42.8084 DEBUG Request did not match any endpoints
+2025-03-21 15:26:42.8887 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:26:42.8951 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:26:42.8951 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 120.3133ms
+2025-03-21 15:26:42.9180 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:26:42.9180 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 1.8223ms
+2025-03-21 15:26:43.0686 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:26:43.0686 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:26:43.0686 DEBUG Request did not match any endpoints
+2025-03-21 15:26:43.1881 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.4997ms
+2025-03-21 15:28:54.9953 DEBUG Connection id "0HNB8EEHL1BNH" is closing.
+2025-03-21 15:28:54.9953 DEBUG Connection id "0HNB8EEHL1BNH" is closed. The last processed stream ID was 5.
+2025-03-21 15:28:54.9953 DEBUG Connection id "0HNB8EEHL1BNH" received FIN.
+2025-03-21 15:28:54.9953 DEBUG Connection id "0HNB8EEHL1BNH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:28:55.0119 DEBUG Connection id "0HNB8EEHL1BNH" stopped.
+2025-03-21 15:29:09.5172 DEBUG Connection id "0HNB8EEHL1BNI" accepted.
+2025-03-21 15:29:09.5172 DEBUG Connection id "0HNB8EEHL1BNI" started.
+2025-03-21 15:29:09.5559 DEBUG Connection 0HNB8EEHL1BNI established using the following protocol: Tls13
+2025-03-21 15:29:09.5559 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:29:09.5559 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:29:09.5559 DEBUG Request did not match any endpoints
+2025-03-21 15:29:09.5636 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:29:09.5636 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:29:09.5636 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.5058ms
+2025-03-21 15:29:09.6066 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:29:09.6066 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 1.6822ms
+2025-03-21 15:29:09.7465 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:29:09.7465 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:29:09.7465 DEBUG Request did not match any endpoints
+2025-03-21 15:29:09.7515 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.9728ms
+2025-03-21 15:29:10.8534 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:29:10.8534 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:29:10.8534 DEBUG Request did not match any endpoints
+2025-03-21 15:29:10.8534 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:29:10.8534 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:29:10.8534 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.1829ms
+2025-03-21 15:29:10.8724 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:29:10.8724 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2587ms
+2025-03-21 15:29:10.9206 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:29:10.9206 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:29:10.9206 DEBUG Request did not match any endpoints
+2025-03-21 15:29:10.9231 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.4477ms
+2025-03-21 15:29:13.0091 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:29:13.0091 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:29:13.0091 DEBUG Request did not match any endpoints
+2025-03-21 15:29:13.0091 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:29:13.0091 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:29:13.0091 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.1959ms
+2025-03-21 15:29:13.0277 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:29:13.0277 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1823ms
+2025-03-21 15:29:13.1015 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:29:13.1015 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:29:13.1015 DEBUG Request did not match any endpoints
+2025-03-21 15:29:13.1015 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.1478ms
+2025-03-21 15:31:24.4996 DEBUG Connection id "0HNB8EEHL1BNI" is closing.
+2025-03-21 15:31:24.5007 DEBUG Connection id "0HNB8EEHL1BNI" is closed. The last processed stream ID was 17.
+2025-03-21 15:31:24.5007 DEBUG Connection id "0HNB8EEHL1BNI" stopped.
+2025-03-21 15:31:24.5007 DEBUG Connection id "0HNB8EEHL1BNI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:53:48.1627 DEBUG Application starting...
+2025-03-21 15:53:48.5217 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-21 15:53:48.6094 DEBUG Hosting starting
+2025-03-21 15:53:48.7062 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-21 15:53:48.7385 INFO Now listening on: https://localhost:7064
+2025-03-21 15:53:48.7385 INFO Now listening on: http://localhost:5110
+2025-03-21 15:53:48.7385 DEBUG Loaded hosting startup assembly WebApi
+2025-03-21 15:53:48.7385 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-21 15:53:48.7385 INFO Application started. Press Ctrl+C to shut down.
+2025-03-21 15:53:48.7385 INFO Hosting environment: Development
+2025-03-21 15:53:48.7385 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\WebApi\
+2025-03-21 15:53:48.7385 DEBUG Hosting started
+2025-03-21 15:53:51.3475 DEBUG Connection id "0HNB8ETN110TB" accepted.
+2025-03-21 15:53:51.3475 DEBUG Connection id "0HNB8ETN110TB" started.
+2025-03-21 15:53:51.3918 DEBUG Connection 0HNB8ETN110TB established using the following protocol: Tls13
+2025-03-21 15:53:51.4303 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:53:51.4411 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2025-03-21 15:53:51.4623 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:53:51.4623 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.5474 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:53:51.5474 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:53:51.5474 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 128.1001ms
+2025-03-21 15:53:51.5841 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui.css - -
+2025-03-21 15:53:51.5841 DEBUG No candidates found for the request path '/swagger/swagger-ui.css'
+2025-03-21 15:53:51.5841 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.5841 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui-bundle.js - -
+2025-03-21 15:53:51.5841 DEBUG No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-03-21 15:53:51.5841 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.5841 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - -
+2025-03-21 15:53:51.5841 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:53:51.5841 DEBUG No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-03-21 15:53:51.5841 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.5841 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 1.5631ms
+2025-03-21 15:53:51.6096 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-21 15:53:51.6108 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-21 15:53:51.6108 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui.css - - - 200 144929 text/css 27.4496ms
+2025-03-21 15:53:51.6108 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 24.6804ms
+2025-03-21 15:53:51.6316 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-21 15:53:51.6316 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 45.4854ms
+2025-03-21 15:53:51.8455 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:53:51.8455 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:53:51.8455 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.8728 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/favicon-32x32.png - -
+2025-03-21 15:53:51.8728 DEBUG No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-03-21 15:53:51.8728 DEBUG Request did not match any endpoints
+2025-03-21 15:53:51.8728 INFO Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-03-21 15:53:51.8728 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/favicon-32x32.png - - - 200 628 image/png 0.5904ms
+2025-03-21 15:53:51.9449 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.3637ms
+2025-03-21 15:54:02.8499 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 40
+2025-03-21 15:54:02.8499 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:54:02.8499 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:54:02.8499 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:02.8499 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:54:02.8499 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:02.8923 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:54:02.8923 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:54:02.8923 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:54:02.8923 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:54:02.8923 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:54:02.8923 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:54:02.8923 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:54:03.4168 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-03-21 15:54:03.5414 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:54:03.5414 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:54:03.5479 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:54:03.5479 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:03.5479 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:03.5479 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:03.5479 DEBUG Connection id "0HNB8ETN110TB", Request id "0HNB8ETN110TB:0000000F": started reading request body.
+2025-03-21 15:54:03.5479 DEBUG Connection id "0HNB8ETN110TB", Request id "0HNB8ETN110TB:0000000F": done reading request body.
+2025-03-21 15:54:03.6533 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:03.6533 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:03.6533 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:54:03.6612 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:04.1504 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 15:54:04.1723 DEBUG '"RepositoryContext"' generated a temporary value for the property '"Id"."Book"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:54:04.2122 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:54:04.2122 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 15:54:04.2234 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 15:54:04.2234 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 15:54:04.2234 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 15:54:04.2234 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 15:54:04.2467 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:54:04.2799 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:54:04.2824 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 15:54:04.3433 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 15:54:04.4035 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 15:54:04.4075 DEBUG Created DbCommand for 'ExecuteReader' (1ms).
+2025-03-21 15:54:04.4328 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 15:54:04.4633 INFO Executed DbCommand (35ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 15:54:04.4790 DEBUG The foreign key property 'Book.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-21 15:54:04.4851 DEBUG A data reader was disposed.
+2025-03-21 15:54:04.4851 DEBUG Committing transaction.
+2025-03-21 15:54:04.4851 DEBUG Committed transaction.
+2025-03-21 15:54:04.4851 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:54:04.4851 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:54:04.5012 DEBUG Disposing transaction.
+2025-03-21 15:54:04.5012 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:54:04.5012 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 15:54:04.5012 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:54:04.5159 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:54:04.5159 DEBUG Selected output formatter 'WebApi.Utilities.Formatters.CsvOutputFormatter' and content type 'text/csv' to write the response.
+2025-03-21 15:54:04.5159 INFO Executing ObjectResult, writing value of type 'Entities.DataTransferObjects.BookDto'.
+2025-03-21 15:54:04.5159 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 1625.3263ms
+2025-03-21 15:54:04.5159 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:04.5159 DEBUG 'RepositoryContext' disposed.
+2025-03-21 15:54:04.5159 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 40 - 201 - text/csv;+charset=utf-8 1674.4190ms
+2025-03-21 15:54:14.1394 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 40
+2025-03-21 15:54:14.1394 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:54:14.1394 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:54:14.1394 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:14.1394 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:54:14.1394 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:14.1394 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:54:14.1394 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:54:14.1394 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:54:14.1394 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:54:14.1394 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:54:14.1394 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:54:14.1394 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:54:14.1450 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:54:14.1450 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:54:14.1450 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:54:14.1450 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:14.1450 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:14.1450 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:54:14.1450 DEBUG Connection id "0HNB8ETN110TB", Request id "0HNB8ETN110TB:00000011": started reading request body.
+2025-03-21 15:54:14.1450 DEBUG Connection id "0HNB8ETN110TB", Request id "0HNB8ETN110TB:00000011": done reading request body.
+2025-03-21 15:54:14.1450 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:14.1450 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:14.1450 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:54:14.1450 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:54:14.1450 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 15:54:14.1450 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:54:14.1450 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:54:14.1450 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 15:54:14.1450 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 15:54:14.1635 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 23.0097ms
+2025-03-21 15:54:14.1635 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:54:14.1635 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 40 - 422 74 application/xml;+charset=utf-8 24.3429ms
+2025-03-21 15:54:52.4716 DEBUG Connection id "0HNB8ETN110TB" received FIN.
+2025-03-21 15:54:52.4905 DEBUG Connection id "0HNB8ETN110TB" is closed. The last processed stream ID was 17.
+2025-03-21 15:54:52.4905 DEBUG Connection id "0HNB8ETN110TB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:54:52.4905 DEBUG Connection id "0HNB8ETN110TB" stopped.
+2025-03-21 15:57:05.5801 DEBUG Connection id "0HNB8ETN110TC" accepted.
+2025-03-21 15:57:05.5801 DEBUG Connection id "0HNB8ETN110TC" started.
+2025-03-21 15:57:05.5801 DEBUG Connection 0HNB8ETN110TC established using the following protocol: Tls13
+2025-03-21 15:57:05.5945 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 37
+2025-03-21 15:57:05.5945 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:57:05.5945 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:57:05.5945 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:05.5945 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:57:05.5945 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:05.5945 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:57:05.5945 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:57:05.5945 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:57:05.5945 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:05.5945 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:57:05.5945 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:05.5945 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:05.5945 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:05.5945 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:05.5945 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:57:05.5945 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:05.5945 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:05.5945 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:05.5945 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000001": started reading request body.
+2025-03-21 15:57:05.5945 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000001": done reading request body.
+2025-03-21 15:57:05.5945 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:05.5945 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:05.5945 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:05.5945 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:05.6282 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-21 15:57:05.6282 DEBUG '"RepositoryContext"' generated a temporary value for the property '"Id"."Book"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:57:05.6282 DEBUG Context 'RepositoryContext' started tracking 'Book' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:57:05.6282 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 15:57:05.6282 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 15:57:05.6282 DEBUG SaveChanges starting for 'RepositoryContext'.
+2025-03-21 15:57:05.6282 DEBUG DetectChanges starting for 'RepositoryContext'.
+2025-03-21 15:57:05.6282 DEBUG DetectChanges completed for 'RepositoryContext'.
+2025-03-21 15:57:05.6282 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:57:05.6282 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:57:05.6282 DEBUG Beginning transaction with isolation level 'Unspecified'.
+2025-03-21 15:57:05.6282 DEBUG Began transaction with isolation level 'Unspecified'.
+2025-03-21 15:57:05.6282 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-21 15:57:05.6282 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-21 15:57:05.6282 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 15:57:05.6282 INFO Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+INSERT INTO `Books` (`Price`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `Books`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2025-03-21 15:57:05.6282 DEBUG The foreign key property 'Book.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-03-21 15:57:05.6282 DEBUG A data reader was disposed.
+2025-03-21 15:57:05.6282 DEBUG Committing transaction.
+2025-03-21 15:57:05.6446 DEBUG Committed transaction.
+2025-03-21 15:57:05.6446 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:57:05.6446 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-21 15:57:05.6446 DEBUG Disposing transaction.
+2025-03-21 15:57:05.6446 DEBUG An entity of type 'Book' tracked by 'RepositoryContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-03-21 15:57:05.6446 DEBUG SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2025-03-21 15:57:05.6446 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:57:05.6446 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:57:05.6446 DEBUG Selected output formatter 'WebApi.Utilities.Formatters.CsvOutputFormatter' and content type 'text/csv' to write the response.
+2025-03-21 15:57:05.6446 INFO Executing ObjectResult, writing value of type 'Entities.DataTransferObjects.BookDto'.
+2025-03-21 15:57:05.6446 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 49.6105ms
+2025-03-21 15:57:05.6446 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:05.6446 DEBUG 'RepositoryContext' disposed.
+2025-03-21 15:57:05.6446 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 37 - 201 - text/csv;+charset=utf-8 50.9156ms
+2025-03-21 15:57:13.0877 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 35
+2025-03-21 15:57:13.0877 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:57:13.0877 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:57:13.0877 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:13.0877 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:57:13.0877 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:13.0877 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:57:13.0877 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:57:13.0877 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:57:13.0877 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:13.0877 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:57:13.0877 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:13.0877 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:13.0877 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:13.0877 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:13.0877 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:57:13.0877 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:13.0877 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:13.0877 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:13.0877 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000003": started reading request body.
+2025-03-21 15:57:13.0877 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000003": done reading request body.
+2025-03-21 15:57:13.0877 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:13.0877 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:13.0877 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:13.0877 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:13.0877 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 15:57:13.0877 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:57:13.0877 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:57:13.0877 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 15:57:13.0877 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 15:57:13.0877 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 2.5138ms
+2025-03-21 15:57:13.0877 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:13.0877 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 35 - 422 56 application/xml;+charset=utf-8 3.4696ms
+2025-03-21 15:57:19.3517 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 4
+2025-03-21 15:57:19.3517 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:57:19.3517 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:57:19.3517 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:19.3517 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:57:19.3517 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:19.3517 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:57:19.3517 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:57:19.3517 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:57:19.3517 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:19.3517 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:57:19.3517 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:19.3517 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:19.3517 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:19.3517 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:19.3517 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:57:19.3517 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:19.3517 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:19.3517 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:19.3517 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000005": started reading request body.
+2025-03-21 15:57:19.3517 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000005": done reading request body.
+2025-03-21 15:57:19.3517 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:19.3517 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:19.3517 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:19.3517 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:19.3517 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 15:57:19.3517 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:57:19.3517 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:57:19.3517 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 15:57:19.3517 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 15:57:19.3517 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 1.9955ms
+2025-03-21 15:57:19.3517 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:19.3517 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 4 - 422 115 application/xml;+charset=utf-8 3.2721ms
+2025-03-21 15:57:30.4805 INFO Request starting HTTP/2 POST https://localhost:7064/api/books application/json 33
+2025-03-21 15:57:30.4805 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:57:30.4805 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:57:30.4805 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:30.4805 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:57:30.4805 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:30.4805 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:57:30.4805 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:57:30.4805 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:57:30.4805 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:30.4805 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:57:30.4805 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:57:30.4805 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:30.4805 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:57:30.4805 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:30.4805 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:57:30.4805 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:30.4805 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:30.4805 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:57:30.4805 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000007": started reading request body.
+2025-03-21 15:57:30.4805 DEBUG Connection id "0HNB8ETN110TC", Request id "0HNB8ETN110TC:00000007": done reading request body.
+2025-03-21 15:57:30.4805 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:30.4805 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:30.4805 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:57:30.4805 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:57:30.4805 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 15:57:30.4805 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:57:30.4805 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:57:30.4805 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 15:57:30.4805 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 15:57:30.4805 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 2.3306ms
+2025-03-21 15:57:30.4805 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:57:30.4805 INFO Request finished HTTP/2 POST https://localhost:7064/api/books application/json 33 - 422 115 application/xml;+charset=utf-8 3.3000ms
+2025-03-21 15:58:12.6511 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:58:12.6511 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:58:12.6511 DEBUG Request did not match any endpoints
+2025-03-21 15:58:12.6511 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:58:12.6511 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:58:12.6511 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.9598ms
+2025-03-21 15:58:12.6692 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:58:12.6692 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2233ms
+2025-03-21 15:58:12.8487 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:58:12.8487 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:58:12.8487 DEBUG Request did not match any endpoints
+2025-03-21 15:58:12.8487 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.2591ms
+2025-03-21 15:58:15.6699 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:58:15.6699 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:58:15.6699 DEBUG Request did not match any endpoints
+2025-03-21 15:58:15.6750 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:58:15.6750 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:58:15.6750 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 5.3961ms
+2025-03-21 15:58:15.7034 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:58:15.7037 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2685ms
+2025-03-21 15:58:15.8029 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:58:15.8029 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:58:15.8029 DEBUG Request did not match any endpoints
+2025-03-21 15:58:15.8029 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.5148ms
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TD" accepted.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TD" started.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TE" accepted.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TE" started.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TD" received FIN.
+2025-03-21 15:58:36.5411 DEBUG Failed to authenticate HTTPS connection.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TD" stopped.
+2025-03-21 15:58:36.5411 DEBUG Connection id "0HNB8ETN110TD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:58:36.5411 DEBUG Connection 0HNB8ETN110TE established using the following protocol: Tls13
+2025-03-21 15:58:36.5522 INFO Request starting HTTP/1.1 POST https://localhost:7064/api/books application/json 46
+2025-03-21 15:58:36.5522 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-21 15:58:36.5522 DEBUG Endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-21 15:58:36.5522 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:58:36.5522 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 15:58:36.5522 INFO Executing endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:58:36.5522 INFO Route matched with {action = "CreateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOneBookAsync(Entities.DataTransferObjects.BookDtoForInsertion) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 15:58:36.5522 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 15:58:36.5522 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 15:58:36.5522 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:58:36.5522 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 15:58:36.5522 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 15:58:36.5522 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:58:36.5522 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 15:58:36.5522 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:58:36.5522 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' using the name '' in request data ...
+2025-03-21 15:58:36.5522 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 15:58:36.5522 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 15:58:36.5522 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 15:58:36.5522 DEBUG Connection id "0HNB8ETN110TE", Request id "0HNB8ETN110TE:00000002": started reading request body.
+2025-03-21 15:58:36.5522 DEBUG Connection id "0HNB8ETN110TE", Request id "0HNB8ETN110TE:00000002": done reading request body.
+2025-03-21 15:58:36.5522 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:58:36.5522 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:58:36.5522 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion' ...
+2025-03-21 15:58:36.5522 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForInsertion'.
+2025-03-21 15:58:36.5522 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 15:58:36.5522 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 15:58:36.5522 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 15:58:36.5522 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 15:58:36.5522 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 15:58:36.5522 INFO Executed action Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation) in 3.5716ms
+2025-03-21 15:58:36.5522 INFO Executed endpoint 'Presentation.Controllers.BooksController.CreateOneBookAsync (Presentation)'
+2025-03-21 15:58:36.5522 DEBUG Connection id "0HNB8ETN110TE" completed keep alive response.
+2025-03-21 15:58:36.5522 INFO Request finished HTTP/1.1 POST https://localhost:7064/api/books application/json 46 - 422 132 application/xml;+charset=utf-8 7.8783ms
+2025-03-21 15:59:11.9570 DEBUG Connection id "0HNB8ETN110TC" received FIN.
+2025-03-21 15:59:11.9570 DEBUG Connection id "0HNB8ETN110TC" is closed. The last processed stream ID was 19.
+2025-03-21 15:59:11.9570 DEBUG Connection id "0HNB8ETN110TC" stopped.
+2025-03-21 15:59:11.9570 DEBUG Connection id "0HNB8ETN110TC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:59:13.9694 DEBUG Connection id "0HNB8ETN110TF" accepted.
+2025-03-21 15:59:13.9694 DEBUG Connection id "0HNB8ETN110TF" started.
+2025-03-21 15:59:13.9977 DEBUG Connection 0HNB8ETN110TF established using the following protocol: Tls13
+2025-03-21 15:59:14.0018 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:14.0018 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:14.0018 DEBUG Request did not match any endpoints
+2025-03-21 15:59:14.0018 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:14.0018 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:14.0018 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 9.8497ms
+2025-03-21 15:59:14.0494 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:59:14.0494 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.4084ms
+2025-03-21 15:59:14.1883 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:59:14.1884 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:59:14.1884 DEBUG Request did not match any endpoints
+2025-03-21 15:59:14.1884 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.0350ms
+2025-03-21 15:59:17.0100 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:17.0100 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:17.0100 DEBUG Request did not match any endpoints
+2025-03-21 15:59:17.0100 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:17.0100 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:17.0100 DEBUG Request did not match any endpoints
+2025-03-21 15:59:17.0163 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:17.0163 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:17.0163 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:17.0163 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:17.0163 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.1261ms
+2025-03-21 15:59:17.0163 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 6.4292ms
+2025-03-21 15:59:17.0418 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:59:17.0418 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.3477ms
+2025-03-21 15:59:17.1317 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:59:17.1317 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:59:17.1317 DEBUG Request did not match any endpoints
+2025-03-21 15:59:17.1317 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.7507ms
+2025-03-21 15:59:21.5092 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:21.5092 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:21.5092 DEBUG Request did not match any endpoints
+2025-03-21 15:59:21.5092 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:21.5092 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:21.5092 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.6957ms
+2025-03-21 15:59:21.5167 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:21.5167 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:21.5167 DEBUG Request did not match any endpoints
+2025-03-21 15:59:21.5167 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:21.5167 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:21.5167 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.6193ms
+2025-03-21 15:59:21.5383 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:59:21.5383 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2479ms
+2025-03-21 15:59:21.6414 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:59:21.6414 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:59:21.6414 DEBUG Request did not match any endpoints
+2025-03-21 15:59:21.6414 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.3917ms
+2025-03-21 15:59:22.4564 DEBUG Connection id "0HNB8ETN110TF" received FIN.
+2025-03-21 15:59:22.4564 DEBUG Connection id "0HNB8ETN110TF" is closed. The last processed stream ID was 21.
+2025-03-21 15:59:22.4564 DEBUG Connection id "0HNB8ETN110TF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 15:59:22.4564 DEBUG Connection id "0HNB8ETN110TF" stopped.
+2025-03-21 15:59:24.4773 DEBUG Connection id "0HNB8ETN110TG" accepted.
+2025-03-21 15:59:24.4773 DEBUG Connection id "0HNB8ETN110TG" started.
+2025-03-21 15:59:24.4909 DEBUG Connection 0HNB8ETN110TG established using the following protocol: Tls13
+2025-03-21 15:59:24.4909 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 15:59:24.4909 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 15:59:24.4909 DEBUG Request did not match any endpoints
+2025-03-21 15:59:24.4909 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 15:59:24.4909 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 15:59:24.4909 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.7411ms
+2025-03-21 15:59:24.5114 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 15:59:24.5114 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1998ms
+2025-03-21 15:59:24.6001 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 15:59:24.6001 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 15:59:24.6001 DEBUG Request did not match any endpoints
+2025-03-21 15:59:24.6001 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3535ms
+2025-03-21 16:00:06.8407 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:00:06.8407 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:00:06.8407 DEBUG Request did not match any endpoints
+2025-03-21 16:00:06.8407 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:00:06.8447 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:00:06.8447 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.1122ms
+2025-03-21 16:00:06.8667 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:00:06.8667 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.4024ms
+2025-03-21 16:00:06.9640 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:00:06.9640 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:00:06.9640 DEBUG Request did not match any endpoints
+2025-03-21 16:00:06.9640 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.0118ms
+2025-03-21 16:00:14.9081 DEBUG Connection id "0HNB8ETN110TG" received FIN.
+2025-03-21 16:00:14.9081 DEBUG Connection id "0HNB8ETN110TG" is closed. The last processed stream ID was 11.
+2025-03-21 16:00:14.9081 DEBUG Connection id "0HNB8ETN110TG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:00:14.9081 DEBUG Connection id "0HNB8ETN110TG" stopped.
+2025-03-21 16:00:47.7976 DEBUG Connection id "0HNB8ETN110TE" disconnecting.
+2025-03-21 16:00:47.7976 DEBUG Connection id "0HNB8ETN110TE" stopped.
+2025-03-21 16:00:47.7976 DEBUG Connection id "0HNB8ETN110TE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:01:41.4589 DEBUG Connection id "0HNB8ETN110TH" accepted.
+2025-03-21 16:01:41.4589 DEBUG Connection id "0HNB8ETN110TH" started.
+2025-03-21 16:01:41.4589 DEBUG Connection 0HNB8ETN110TH established using the following protocol: Tls13
+2025-03-21 16:01:41.4697 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:01:41.4697 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:01:41.4697 DEBUG Request did not match any endpoints
+2025-03-21 16:01:41.4697 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:01:41.4697 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:01:41.4697 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.6705ms
+2025-03-21 16:01:41.4873 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:01:41.4873 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.4601ms
+2025-03-21 16:01:41.5482 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:01:41.5482 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:01:41.5482 DEBUG Request did not match any endpoints
+2025-03-21 16:01:41.5482 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3559ms
+2025-03-21 16:02:48.8846 DEBUG Connection id "0HNB8ETN110TH" received FIN.
+2025-03-21 16:02:48.8915 DEBUG Connection id "0HNB8ETN110TH" is closed. The last processed stream ID was 5.
+2025-03-21 16:02:48.8915 DEBUG Connection id "0HNB8ETN110TH" stopped.
+2025-03-21 16:02:48.8915 DEBUG Connection id "0HNB8ETN110TH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:03:18.2901 DEBUG Connection id "0HNB8ETN110TI" accepted.
+2025-03-21 16:03:18.2901 DEBUG Connection id "0HNB8ETN110TI" started.
+2025-03-21 16:03:18.3063 DEBUG Connection 0HNB8ETN110TI established using the following protocol: Tls13
+2025-03-21 16:03:18.3063 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:03:18.3063 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:03:18.3063 DEBUG Request did not match any endpoints
+2025-03-21 16:03:18.3063 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:03:18.3063 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:03:18.3063 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.1534ms
+2025-03-21 16:03:18.3299 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:03:18.3299 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2778ms
+2025-03-21 16:03:18.4499 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:03:18.4499 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:03:18.4499 DEBUG Request did not match any endpoints
+2025-03-21 16:03:18.4499 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.4443ms
+2025-03-21 16:03:20.5297 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:03:20.5297 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:03:20.5297 DEBUG Request did not match any endpoints
+2025-03-21 16:03:20.5297 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:03:20.5297 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:03:20.5297 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 1.3106ms
+2025-03-21 16:03:20.5563 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:03:20.5563 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.3248ms
+2025-03-21 16:03:20.6722 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:03:20.6722 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:03:20.6722 DEBUG Request did not match any endpoints
+2025-03-21 16:03:20.6722 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.3652ms
+2025-03-21 16:04:30.8919 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:30.8919 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:30.8919 DEBUG Request did not match any endpoints
+2025-03-21 16:04:30.8919 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:30.8919 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:30.8919 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.5797ms
+2025-03-21 16:04:30.8919 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:30.8919 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:30.8919 DEBUG Request did not match any endpoints
+2025-03-21 16:04:30.8919 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:30.8919 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:30.8919 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4671ms
+2025-03-21 16:04:30.9206 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:30.9206 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1709ms
+2025-03-21 16:04:30.9958 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:30.9958 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:30.9958 DEBUG Request did not match any endpoints
+2025-03-21 16:04:30.9958 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.8243ms
+2025-03-21 16:04:34.1833 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:34.1833 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:34.1833 DEBUG Request did not match any endpoints
+2025-03-21 16:04:34.1833 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:34.1833 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:34.1833 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.8473ms
+2025-03-21 16:04:34.1891 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:34.1891 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:34.1891 DEBUG Request did not match any endpoints
+2025-03-21 16:04:34.1891 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:34.1891 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:34.1891 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3916ms
+2025-03-21 16:04:34.2115 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:34.2115 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1532ms
+2025-03-21 16:04:34.2650 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:34.2650 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:34.2650 DEBUG Request did not match any endpoints
+2025-03-21 16:04:34.2670 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.0146ms
+2025-03-21 16:04:40.6203 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:40.6203 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:40.6203 DEBUG Request did not match any endpoints
+2025-03-21 16:04:40.6203 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:40.6203 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:40.6203 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.6817ms
+2025-03-21 16:04:40.6272 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:40.6272 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:40.6272 DEBUG Request did not match any endpoints
+2025-03-21 16:04:40.6272 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:40.6272 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:40.6272 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3521ms
+2025-03-21 16:04:40.6464 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:40.6464 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1568ms
+2025-03-21 16:04:40.6999 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:40.6999 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:40.6999 DEBUG Request did not match any endpoints
+2025-03-21 16:04:40.6999 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.8699ms
+2025-03-21 16:04:42.0360 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:42.0360 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:42.0360 DEBUG Request did not match any endpoints
+2025-03-21 16:04:42.0360 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:42.0360 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:42.0360 DEBUG Request did not match any endpoints
+2025-03-21 16:04:42.0360 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:42.0360 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:42.0360 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.8764ms
+2025-03-21 16:04:42.0360 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:42.0360 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:42.0360 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.6412ms
+2025-03-21 16:04:42.0645 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:42.0645 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2457ms
+2025-03-21 16:04:42.1723 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:42.1723 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:42.1723 DEBUG Request did not match any endpoints
+2025-03-21 16:04:42.1753 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.9877ms
+2025-03-21 16:04:51.6139 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:51.6139 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:51.6139 DEBUG Request did not match any endpoints
+2025-03-21 16:04:51.6139 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:51.6139 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:51.6139 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.4310ms
+2025-03-21 16:04:51.6139 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:51.6139 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:51.6139 DEBUG Request did not match any endpoints
+2025-03-21 16:04:51.6139 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:51.6139 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:51.6139 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.5055ms
+2025-03-21 16:04:51.6389 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:51.6389 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.5742ms
+2025-03-21 16:04:51.7105 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:51.7105 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:51.7105 DEBUG Request did not match any endpoints
+2025-03-21 16:04:51.7105 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.0562ms
+2025-03-21 16:04:53.8658 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:53.8658 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:53.8658 DEBUG Request did not match any endpoints
+2025-03-21 16:04:53.8658 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:53.8658 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:53.8658 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.3006ms
+2025-03-21 16:04:53.8658 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:53.8658 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:53.8658 DEBUG Request did not match any endpoints
+2025-03-21 16:04:53.8658 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:53.8658 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:53.8658 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.6455ms
+2025-03-21 16:04:53.8914 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:53.8914 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1754ms
+2025-03-21 16:04:53.9786 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:53.9786 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:53.9786 DEBUG Request did not match any endpoints
+2025-03-21 16:04:53.9786 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.8443ms
+2025-03-21 16:04:57.4689 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:57.4694 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:57.4694 DEBUG Request did not match any endpoints
+2025-03-21 16:04:57.4694 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:57.4694 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:57.4694 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 5.5098ms
+2025-03-21 16:04:57.5014 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:57.5014 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2963ms
+2025-03-21 16:04:57.5882 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:57.5882 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:57.5882 DEBUG Request did not match any endpoints
+2025-03-21 16:04:57.5882 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.6545ms
+2025-03-21 16:04:58.7723 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:58.7723 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:58.7723 DEBUG Request did not match any endpoints
+2025-03-21 16:04:58.7723 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:04:58.7723 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:04:58.7723 DEBUG Request did not match any endpoints
+2025-03-21 16:04:58.7723 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:58.7723 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:04:58.7723 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:58.7723 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 5.2269ms
+2025-03-21 16:04:58.7723 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:04:58.7723 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.4689ms
+2025-03-21 16:04:58.8008 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:04:58.8008 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1901ms
+2025-03-21 16:04:58.8847 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:04:58.8847 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:04:58.8847 DEBUG Request did not match any endpoints
+2025-03-21 16:04:58.8847 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.5688ms
+2025-03-21 16:05:01.1977 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:01.1977 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:01.1977 DEBUG Request did not match any endpoints
+2025-03-21 16:05:01.1977 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:01.1977 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:01.1977 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:01.1977 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.2188ms
+2025-03-21 16:05:01.1977 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:01.1977 DEBUG Request did not match any endpoints
+2025-03-21 16:05:01.1977 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:01.1977 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:01.1977 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.8604ms
+2025-03-21 16:05:01.2254 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:05:01.2254 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2206ms
+2025-03-21 16:05:01.3012 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:05:01.3012 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:05:01.3012 DEBUG Request did not match any endpoints
+2025-03-21 16:05:01.3012 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.5174ms
+2025-03-21 16:05:02.8769 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:02.8769 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:02.8769 DEBUG Request did not match any endpoints
+2025-03-21 16:05:02.8769 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:02.8769 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:02.8769 DEBUG Request did not match any endpoints
+2025-03-21 16:05:02.8769 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:02.8769 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:02.8769 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:02.8769 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:02.8769 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.6850ms
+2025-03-21 16:05:02.8769 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 4.6373ms
+2025-03-21 16:05:02.9036 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:05:02.9036 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2086ms
+2025-03-21 16:05:02.9885 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:05:02.9885 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:05:02.9885 DEBUG Request did not match any endpoints
+2025-03-21 16:05:02.9885 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.9759ms
+2025-03-21 16:05:05.8545 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:05.8545 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:05.8545 DEBUG Request did not match any endpoints
+2025-03-21 16:05:05.8545 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:05.8545 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:05.8545 DEBUG Request did not match any endpoints
+2025-03-21 16:05:05.8545 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:05.8545 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:05.8545 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:05.8545 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:05.8545 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 3.6601ms
+2025-03-21 16:05:05.8545 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.5785ms
+2025-03-21 16:05:05.8730 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:05:05.8730 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.2638ms
+2025-03-21 16:05:05.9652 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:05:05.9652 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:05:05.9652 DEBUG Request did not match any endpoints
+2025-03-21 16:05:05.9652 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.5330ms
+2025-03-21 16:05:13.9375 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:13.9375 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:13.9375 DEBUG Request did not match any endpoints
+2025-03-21 16:05:13.9404 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:13.9404 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:13.9404 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.9836ms
+2025-03-21 16:05:13.9404 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:13.9404 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:13.9404 DEBUG Request did not match any endpoints
+2025-03-21 16:05:13.9404 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:13.9404 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:13.9404 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3463ms
+2025-03-21 16:05:13.9606 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:05:13.9606 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1905ms
+2025-03-21 16:05:14.0055 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:05:14.0055 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:05:14.0055 DEBUG Request did not match any endpoints
+2025-03-21 16:05:14.0055 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.6884ms
+2025-03-21 16:05:18.6623 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:18.6623 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:18.6623 DEBUG Request did not match any endpoints
+2025-03-21 16:05:18.6623 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:18.6623 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/index.html - -
+2025-03-21 16:05:18.6623 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:18.6623 DEBUG No candidates found for the request path '/swagger/index.html'
+2025-03-21 16:05:18.6623 DEBUG Request did not match any endpoints
+2025-03-21 16:05:18.6623 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 2.7159ms
+2025-03-21 16:05:18.6623 DEBUG Response markup is scheduled to include browser refresh script injection.
+2025-03-21 16:05:18.6623 DEBUG Response markup was updated to include browser refresh script injection.
+2025-03-21 16:05:18.6623 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 0.3373ms
+2025-03-21 16:05:18.6871 INFO Request starting HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - -
+2025-03-21 16:05:18.6871 INFO Request finished HTTP/2 GET https://localhost:7064/_framework/aspnetcore-browser-refresh.js - - - 200 13748 application/javascript;+charset=utf-8 0.1684ms
+2025-03-21 16:05:18.7398 INFO Request starting HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - -
+2025-03-21 16:05:18.7398 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2025-03-21 16:05:18.7398 DEBUG Request did not match any endpoints
+2025-03-21 16:05:18.7398 INFO Request finished HTTP/2 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.7465ms
+2025-03-21 16:06:12.9216 DEBUG Connection id "0HNB8ETN110TJ" accepted.
+2025-03-21 16:06:12.9216 DEBUG Connection id "0HNB8ETN110TJ" received FIN.
+2025-03-21 16:06:12.9216 DEBUG Connection id "0HNB8ETN110TJ" started.
+2025-03-21 16:06:12.9216 DEBUG Connection id "0HNB8ETN110TK" accepted.
+2025-03-21 16:06:12.9216 DEBUG Connection id "0HNB8ETN110TK" started.
+2025-03-21 16:06:12.9226 DEBUG Failed to authenticate HTTPS connection.
+2025-03-21 16:06:12.9226 DEBUG Connection id "0HNB8ETN110TJ" stopped.
+2025-03-21 16:06:12.9226 DEBUG Connection id "0HNB8ETN110TJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:06:12.9226 DEBUG Connection 0HNB8ETN110TK established using the following protocol: Tls13
+2025-03-21 16:06:12.9226 INFO Request starting HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 50
+2025-03-21 16:06:12.9226 DEBUG 1 candidate(s) found for the request path '/api/books/2'
+2025-03-21 16:06:12.9226 DEBUG Endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)' with route pattern 'api/books/{id:int}' is valid for the request path '/api/books/2'
+2025-03-21 16:06:12.9226 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 16:06:12.9226 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-21 16:06:12.9226 INFO Executing endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 16:06:12.9226 INFO Route matched with {action = "UpdateOneBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateOneBookAsync(Int32, Entities.DataTransferObjects.BookDtoForUpdate) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-21 16:06:12.9226 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-21 16:06:12.9226 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-21 16:06:12.9226 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 16:06:12.9226 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-21 16:06:12.9226 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.ValidationFilterAttribute (Order: 0)
+2025-03-21 16:06:12.9226 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 16:06:12.9405 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-21 16:06:12.9405 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-03-21 16:06:12.9405 DEBUG Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-03-21 16:06:12.9405 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 16:06:12.9405 DEBUG Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-03-21 16:06:12.9405 DEBUG Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-03-21 16:06:12.9405 DEBUG Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-03-21 16:06:12.9405 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 16:06:12.9405 DEBUG Attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' using the name '' in request data ...
+2025-03-21 16:06:12.9405 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter' for content type 'application/json'.
+2025-03-21 16:06:12.9405 DEBUG Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2025-03-21 16:06:12.9405 DEBUG Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2025-03-21 16:06:12.9405 DEBUG Connection id "0HNB8ETN110TK", Request id "0HNB8ETN110TK:00000002": started reading request body.
+2025-03-21 16:06:12.9405 DEBUG Connection id "0HNB8ETN110TK", Request id "0HNB8ETN110TK:00000002": done reading request body.
+2025-03-21 16:06:12.9405 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 16:06:12.9405 DEBUG Done attempting to bind parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 16:06:12.9405 DEBUG Attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate' ...
+2025-03-21 16:06:12.9405 DEBUG Done attempting to validate the bound parameter 'bookDto' of type 'Entities.DataTransferObjects.BookDtoForUpdate'.
+2025-03-21 16:06:12.9405 DEBUG Request was short circuited at action filter 'Presentation.ActionFilters.ValidationFilterAttribute'.
+2025-03-21 16:06:12.9405 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-21 16:06:12.9405 DEBUG Attempting to select an output formatter based on Accept header '*/*'.
+2025-03-21 16:06:12.9405 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2025-03-21 16:06:12.9405 INFO Executing UnprocessableEntityObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-03-21 16:06:12.9405 INFO Executed action Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation) in 19.2349ms
+2025-03-21 16:06:12.9405 INFO Executed endpoint 'Presentation.Controllers.BooksController.UpdateOneBookAsync (Presentation)'
+2025-03-21 16:06:12.9405 DEBUG Connection id "0HNB8ETN110TK" completed keep alive response.
+2025-03-21 16:06:12.9405 INFO Request finished HTTP/1.1 PUT https://localhost:7064/api/books/2 application/json 50 - 422 132 application/xml;+charset=utf-8 23.3421ms
+2025-03-21 16:06:37.7226 INFO Application is shutting down...
+2025-03-21 16:06:37.7226 DEBUG Hosting stopping
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TI" is closing.
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TI" is closed. The last processed stream ID was 113.
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TK" disconnecting.
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TI" stopped.
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TK" stopped.
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:06:37.7226 DEBUG Connection id "0HNB8ETN110TK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-21 16:06:37.7226 DEBUG Hosting stopped

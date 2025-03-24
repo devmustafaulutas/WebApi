@@ -5,6 +5,7 @@ using WebApi.Extentions;
 using AutoMapper;
 using WebApi.Utilities.AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ActionFilters;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,8 @@ builder.Services.AddControllers(config =>
 .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
                 .AddNewtonsoftJson();
+
+builder.Services.AddScoped<ValidationFilterAttribute>(); //IoC
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {

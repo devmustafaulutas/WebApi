@@ -1208,3 +1208,83 @@ LIMIT @__p_0 OFFSET @__p_0
 2025-03-24 13:47:49.2786 DEBUG Connection id "0HNBAO4QDTLQ3" stopped.
 2025-03-24 13:47:49.2786 DEBUG Connection id "0HNBAO4QDTLQ3" sending FIN because: "The Socket transport's send loop completed gracefully."
 2025-03-24 13:47:49.2786 DEBUG Connection id "0HNBAO4QDTLQ4" started.
+2025-03-24 13:47:49.2786 DEBUG Connection 0HNBAO4QDTLQ4 established using the following protocol: Tls13
+2025-03-24 13:47:49.2786 INFO Request starting HTTP/1.1 GET https://localhost:7064/api/books?pageNumber=2&pageSize=3 - -
+2025-03-24 13:47:49.2786 DEBUG 1 candidate(s) found for the request path '/api/books'
+2025-03-24 13:47:49.2786 DEBUG Endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)' with route pattern 'api/books' is valid for the request path '/api/books'
+2025-03-24 13:47:49.2786 DEBUG Request matched endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-24 13:47:49.2786 DEBUG Static files was skipped as the request already matched an endpoint.
+2025-03-24 13:47:49.2786 INFO Executing endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-24 13:47:49.2786 INFO Route matched with {action = "GetAllBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllBooksAsync(Entities.RequestFeatures.BookParameters) on controller Presentation.Controllers.BooksController (Presentation).
+2025-03-24 13:47:49.2786 DEBUG Execution plan of authorization filters (in the following order): None
+2025-03-24 13:47:49.2786 DEBUG Execution plan of resource filters (in the following order): None
+2025-03-24 13:47:49.2786 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Presentation.ActionFilters.LogFilterAttribute (Order: 0)
+2025-03-24 13:47:49.2786 DEBUG Execution plan of exception filters (in the following order): None
+2025-03-24 13:47:49.2786 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), Presentation.ActionFilters.LogFilterAttribute (Order: 0)
+2025-03-24 13:47:49.2786 DEBUG Executing controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-24 13:47:49.2786 DEBUG Executed controller factory for controller Presentation.Controllers.BooksController (Presentation)
+2025-03-24 13:47:49.2786 DEBUG Attempting to bind parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters' ...
+2025-03-24 13:47:49.2786 DEBUG Attempting to bind parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters' using the name '' in request data ...
+2025-03-24 13:47:49.2786 DEBUG Attempting to bind property 'Entities.RequestFeatures.BookParameters.PageNumber' of type 'System.Int32' using the name 'PageNumber' in request data ...
+2025-03-24 13:47:49.2786 DEBUG Done attempting to bind property 'Entities.RequestFeatures.BookParameters.PageNumber' of type 'System.Int32'.
+2025-03-24 13:47:49.2786 DEBUG Attempting to bind property 'Entities.RequestFeatures.BookParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ...
+2025-03-24 13:47:49.2786 DEBUG Done attempting to bind property 'Entities.RequestFeatures.BookParameters.PageSize' of type 'System.Int32'.
+2025-03-24 13:47:49.2786 DEBUG Done attempting to bind parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters'.
+2025-03-24 13:47:49.2786 DEBUG Done attempting to bind parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters'.
+2025-03-24 13:47:49.2786 DEBUG Attempting to validate the bound parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters' ...
+2025-03-24 13:47:49.2786 DEBUG Done attempting to validate the bound parameter 'bookParameters' of type 'Entities.RequestFeatures.BookParameters'.
+2025-03-24 13:47:49.2786 INFO {"ModelModel":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreatedAt":"2025-03-24T10:47:49.2876674Z"}
+2025-03-24 13:47:49.2960 INFO Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 9.0.1-mysql 
+2025-03-24 13:47:49.2960 DEBUG Creating DbCommand for 'ExecuteReader'.
+2025-03-24 13:47:49.2960 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2025-03-24 13:47:49.2960 DEBUG Opening connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-24 13:47:49.2960 DEBUG Opened connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-24 13:47:49.2960 DEBUG Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+LIMIT @__p_0 OFFSET @__p_0
+2025-03-24 13:47:49.2960 INFO Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `b`.`Id`, `b`.`Price`, `b`.`Title`
+FROM `Books` AS `b`
+ORDER BY `b`.`Id`
+LIMIT @__p_0 OFFSET @__p_0
+2025-03-24 13:47:49.2960 DEBUG A data reader was disposed.
+2025-03-24 13:47:49.2960 DEBUG Closing connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-24 13:47:49.2960 DEBUG Closed connection to database 'bsstoreappdb' on server 'localhost'.
+2025-03-24 13:47:49.2960 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, WebApi.Utilities.Formatters.CsvOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter
+2025-03-24 13:47:49.2960 DEBUG Attempting to select an output formatter based on Accept header 'application/json'.
+2025-03-24 13:47:49.2960 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-03-24 13:47:49.2960 INFO Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.BookDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-24 13:47:49.3804 INFO Executed action Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation) in 96.5091ms
+2025-03-24 13:47:49.3804 INFO Executed endpoint 'Presentation.Controllers.BooksController.GetAllBooksAsync (Presentation)'
+2025-03-24 13:47:49.3804 DEBUG Connection id "0HNBAO4QDTLQ4" completed keep alive response.
+2025-03-24 13:47:49.3804 DEBUG 'RepositoryContext' disposed.
+2025-03-24 13:47:49.3804 INFO Request finished HTTP/1.1 GET https://localhost:7064/api/books?pageNumber=2&pageSize=3 - - - 200 125 application/json;+charset=utf-8 98.4946ms
+2025-03-24 13:47:49.3804 DEBUG Connection id "0HNBAO4QDTLQ4" disconnecting.
+2025-03-24 13:47:49.3804 DEBUG Connection id "0HNBAO4QDTLQ4" stopped.
+2025-03-24 13:47:49.3804 DEBUG Connection id "0HNBAO4QDTLQ4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-24 13:50:07.6074 DEBUG Application starting...
+2025-03-24 13:50:07.9769 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-24 13:50:08.1331 DEBUG Hosting starting
+2025-03-24 13:50:08.2415 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-24 13:50:08.3239 INFO Now listening on: https://localhost:7064
+2025-03-24 13:50:08.3239 INFO Now listening on: http://localhost:5110
+2025-03-24 13:50:08.3239 DEBUG Loaded hosting startup assembly WebApi
+2025-03-24 13:50:08.3239 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-24 13:50:08.3239 INFO Application started. Press Ctrl+C to shut down.
+2025-03-24 13:50:08.3268 INFO Hosting environment: Development
+2025-03-24 13:50:08.3268 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-24 13:50:08.3268 DEBUG Hosting started
+2025-03-24 13:52:28.9354 DEBUG Application starting...
+2025-03-24 13:52:29.1986 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-03-24 13:52:29.2854 DEBUG Hosting starting
+2025-03-24 13:52:29.3473 DEBUG Using development certificate: CN=localhost (Thumbprint: 7141D023E29A5B6F2552DC3E199B3C9FBDD0C14C)
+2025-03-24 13:52:29.3787 INFO Now listening on: https://localhost:7064
+2025-03-24 13:52:29.3787 INFO Now listening on: http://localhost:5110
+2025-03-24 13:52:29.3787 DEBUG Loaded hosting startup assembly WebApi
+2025-03-24 13:52:29.3787 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-24 13:52:29.3787 INFO Application started. Press Ctrl+C to shut down.
+2025-03-24 13:52:29.3787 INFO Hosting environment: Development
+2025-03-24 13:52:29.3787 INFO Content root path: C:\Users\musta\Desktop\code\github\WebApi\webapi\
+2025-03-24 13:52:29.3787 DEBUG Hosting started

@@ -175,7 +175,10 @@
           "Microsoft.EntityFrameworkCore": "6.0.10"
         },
         "runtime": {
-          "Entities.dll": {}
+          "Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Repositories/1.0.0": {
@@ -184,7 +187,10 @@
           "Microsoft.EntityFrameworkCore": "6.0.10"
         },
         "runtime": {
-          "Repositories.dll": {}
+          "Repositories.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

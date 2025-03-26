@@ -6,6 +6,7 @@ C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.Gen
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.sourcelink.json
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.dll
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\musta\Desktop\code\github\WebApi\Entities\obj\Debug\net6.0\Entities.pdb
